@@ -9,15 +9,9 @@ package ola;
  *
  * @author diego
  */
-public class TesteOla {
+public class testeOla {
     public static void main(String[] args) {
         Ola ola = new Ola();
-        ola.comprimenta();
-        ola.comprimenta();
-        ola.comprimenta();
-        ola.comprimenta();
-        ola.comprimenta();
-        ola.comprimenta();
         ola.comprimenta();
         ola.comprimenta();
         ola.comprimenta();

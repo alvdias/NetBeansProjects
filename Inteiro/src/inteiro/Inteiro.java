@@ -22,7 +22,7 @@ public class Inteiro {
     }
     
     public int devolveValorAbsoluto() {
-        return valor * -1; 
+        return Math.abs(valor); 
     }
     
     public void imprime() {

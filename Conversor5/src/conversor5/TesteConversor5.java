@@ -9,8 +9,7 @@ package conversor5;
  *
  * @author diego
  */
-public class TesteConversor {
-    
+public class TesteConversor5 {
     public static void main(String[] args) {
         Conversor5 conversor = new Conversor5();
         System.out.println(conversor.celciusParaFarenheit(27.9));
@@ -20,5 +19,4 @@ public class TesteConversor {
         System.out.println(conversor.farenheitParaCelcius(82.22));
         System.out.println(conversor.farenheitParaKelvin(69.8));
     }
-    
 }
