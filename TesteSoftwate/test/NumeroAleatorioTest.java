@@ -18,6 +18,8 @@ import testesoftware.NumeroAleatorio;
  * @author diego
  */
 public class NumeroAleatorioTest {
+    
+    NumeroAleatorio numeroAleatorio;
 
     public NumeroAleatorioTest() {
     }
@@ -32,6 +34,7 @@ public class NumeroAleatorioTest {
 
     @Before
     public void setUp() {
+        numeroAleatorio = new NumeroAleatorio();
     }
 
     @After
@@ -40,21 +43,18 @@ public class NumeroAleatorioTest {
 
     @Test
     public void casoDeTeste01() {
-        NumeroAleatorio numeroAleatorio = new NumeroAleatorio();
         int resp = numeroAleatorio.gerarNumeroAleatorio(1, 10);
         assertTrue(resp >= 1 && resp <= 10);
     }
 
     @Test
     public void casoDeTeste02() {
-        NumeroAleatorio numeroAleatorio = new NumeroAleatorio();
         int resp = numeroAleatorio.gerarNumeroAleatorio(-1, 10);
         assertEquals(-1, resp);
     }
 
     @Test
     public void casoDeTeste03() {
-        NumeroAleatorio numeroAleatorio = new NumeroAleatorio();
         char s[] = {'a', 'b', 'c', 'd', 'e'};
         String resp = numeroAleatorio.acharCaracter(5, s, 'c');
         assertEquals("2", resp);
@@ -62,12 +62,11 @@ public class NumeroAleatorioTest {
 
     @Test
     public void casoDeTeste04() {
-        NumeroAleatorio numeroAleatorio = new NumeroAleatorio();
         char s[] = {'a', 'b', 'c', 'd', 'e'};
         String resp = numeroAleatorio.acharCaracter(5, s, 'f');
         assertEquals("caracter nao encontrado", resp);
     }
-
+    /*
     @Test
     public void casaDeTeste05() {
         ArrayList<String> list = new ArrayList<>();
@@ -99,4 +98,5 @@ public class NumeroAleatorioTest {
             fail("Não deveria chegar aqui!");
         }
     }
+    */
 }
