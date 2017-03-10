@@ -40,9 +40,6 @@ public class NumeroAleatorio2Test {
         System.out.println("@After");
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
     @Test
     public void casoDeTeste01() {
         System.out.println("Caso de Teste 01");

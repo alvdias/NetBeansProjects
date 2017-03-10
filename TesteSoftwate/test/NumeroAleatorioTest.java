@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Ignore;
 import testesoftware.NumeroAleatorio;
 
 /**
@@ -60,6 +61,7 @@ public class NumeroAleatorioTest {
         assertEquals("2", resp);
     }
 
+    @Ignore
     @Test
     public void casoDeTeste04() {
         char s[] = {'a', 'b', 'c', 'd', 'e'};
