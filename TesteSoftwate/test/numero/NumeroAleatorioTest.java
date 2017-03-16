@@ -70,7 +70,7 @@ public class NumeroAleatorioTest {
         String resp = numeroAleatorio.acharCaracter(5, s, 'f');
         assertEquals("caracter nao encontrado", resp);
     }
-    /*
+    
     @Test
     public void casaDeTeste05() {
         ArrayList<String> list = new ArrayList<>();
@@ -102,5 +102,5 @@ public class NumeroAleatorioTest {
             fail("Não deveria chegar aqui!");
         }
     }
-    */
+    
 }
