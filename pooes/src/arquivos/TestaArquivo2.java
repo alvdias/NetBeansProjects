@@ -15,7 +15,9 @@ import javax.swing.JOptionPane;
  */
 public class TestaArquivo2 {
 
+    private File arquivo = null;
     private BufferedReader entrada = null;
+    private BufferedWriter estritor = null;
 
     private void abrirarquivo() {
         JFileChooser fileChooser = new JFileChooser();
@@ -24,63 +26,67 @@ public class TestaArquivo2 {
         if (result == JFileChooser.CANCEL_OPTION) {
             return;
         }
-        File arquivo = fileChooser.getSelectedFile();
+        arquivo = fileChooser.getSelectedFile();
         System.out.println(arquivo);
 
         if (arquivo == null || arquivo.getName().equals("")) {
-            JOptionPane.showMessageDialog(null, "Nome de Arquivo Inválido", "Nome de Arquivo Inválido", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(
+                    null, "Nome de Arquivo Inválido",
+                    "Nome de Arquivo Inválido",
+                    JOptionPane.ERROR_MESSAGE);
         } else {
             try {
                 entrada = new BufferedReader(new FileReader(arquivo));
             } catch (IOException ioException) {
-                JOptionPane.showMessageDialog(null, "Error ao Abrir Arquivo", "Erro", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(
+                        null, "Error ao Abrir Arquivo",
+                        "Erro", JOptionPane.ERROR_MESSAGE);
             }
         }
     }
 
     public static void main(String[] args) throws IOException {
-        File diretorio = new File("/home/fabricio/temp/");
+        File diretorio = new File("/home/diego/temp/");
         diretorio.mkdir();
 
-        File arquivo = new File(diretorio, "lixo.txt");
-        FileWriter escritor = new FileWriter("/home/fabricio/temp/log.txt", true);
-        BufferedWriter escritorbuffer = new BufferedWriter(escritor);
-        escritorbuffer.write("ola java!");
-        escritorbuffer.flush();
-        escritorbuffer.write("ola java 2!");
-        escritorbuffer.close();
-        escritor.close();
-
-        /*
-        FileReader leitor = new FileReader(arquivo);
-        BufferedReader leitorbuffer = new BufferedReader(leitor);
-         */
         TestaArquivo2 obj = new TestaArquivo2();
+        obj.arquivo = new File("/home/diego/temp/log.txt");
+        obj.escrever("Ola Mundo!\n", true);
+        obj.escrever("Ola Mundo 2!\n", true);
+        
         obj.abrirarquivo();
         if (obj.entrada != null) {
             System.out.println("Leitura do Arquivo: ");
-            while (obj.entrada.ready()) {
-                System.out.println(obj.entrada.readLine());
-            }
-            obj.entrada.close();
-            //leitor.close();
+            System.out.println(obj.ler());
         }
+    }
 
-        File subdir = new File(diretorio, "subdir1");
-        subdir.mkdir();
-        String[] arquivos = diretorio.list();
-        for (int i = 0; i < arquivos.length; i++) {
-            File filho = new File(diretorio, arquivos[i]);
-            System.out.println(filho.getAbsolutePath());
-            System.out.println(filho.getParent());
-            System.out.println("É diretorio? " + filho.isDirectory());
-            System.out.println("É arquivo? " + filho.isFile());
-            System.out.println("Tamanho = " + filho.length() + " bytes.");
+    public boolean escrever(
+            String texto,
+            boolean append) {
+        try {
+            BufferedWriter escritorbuffer;
+            escritorbuffer = new BufferedWriter(new FileWriter(arquivo, append));
+            escritorbuffer.write(texto);
+            escritorbuffer.close();
+            return false;
+        } catch (IOException erro) {
+            System.err.println("Erro na escrita do arquivo!\n" + erro);
         }
-//        if (arquivo.exists()) {
-//            arquivo.delete();
-//        } else {
-//            arquivo.createNewFile();
-//        }
+        return false;
+    }
+    
+    public String ler () {
+        StringBuilder sb = new StringBuilder();
+        try {
+            entrada = new BufferedReader(new FileReader(arquivo));
+            while (entrada.ready()) {
+                sb.append(entrada.readLine()).append("\n");
+            }
+            return sb.toString();
+        } catch(IOException erro) {
+            System.err.println("Erro na escrita do arquivo!\n" + erro);
+        }
+        return null;
     }
 }
