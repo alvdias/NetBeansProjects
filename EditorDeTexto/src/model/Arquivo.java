@@ -14,14 +14,15 @@ import javax.swing.JFileChooser;
  * @author diego
  */
 public class Arquivo {
+
     private File arquivo = null;
     private BufferedReader entrada = null;
     private BufferedWriter escritorbuffer = null;
-    
+
     public File getArquivo() {
         return arquivo;
     }
-    
+
     public boolean abrirArquivo(Component parent) {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
@@ -32,7 +33,7 @@ public class Arquivo {
         arquivo = fileChooser.getSelectedFile();
         return validarArquivo();
     }
-    
+
     public boolean escrever(String texto, boolean append) {
         try {
             escritorbuffer = new BufferedWriter(new FileWriter(arquivo, append));
@@ -43,7 +44,7 @@ public class Arquivo {
         }
         return false;
     }
-    
+
     public String ler() {
         StringBuilder conteudoArquivo = new StringBuilder();
         try {
@@ -58,7 +59,7 @@ public class Arquivo {
         }
         return null;
     }
-    
+
     public boolean salvar() {
         try {
             escritorbuffer.close();
@@ -68,7 +69,7 @@ public class Arquivo {
         }
         return false;
     }
-    
+
     public boolean salvarComo(String texto, Component parent) {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
