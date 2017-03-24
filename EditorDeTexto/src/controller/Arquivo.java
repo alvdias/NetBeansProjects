@@ -47,7 +47,7 @@ public class Arquivo {
     }
 
     public boolean abrirArquivo(Component parent) {
-        if (!apontarArquivo(Arquivo.ABRIRARQUIVO, parent)) return false;
+        if (!apontarArquivo(ABRIRARQUIVO, parent)) return false;
         return validarArquivo();
     }
 
