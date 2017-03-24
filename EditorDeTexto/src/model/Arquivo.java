@@ -16,11 +16,31 @@ import javax.swing.JFileChooser;
 public class Arquivo {
 
     private File arquivo = null;
-    private BufferedReader entrada = null;
-    private BufferedWriter escritorbuffer = null;
+    private BufferedReader leitorBuffer = null;
+    private BufferedWriter escritorBuffer = null;
 
     public File getArquivo() {
         return arquivo;
+    }
+
+    public void setArquivo(File arquivo) {
+        this.arquivo = arquivo;
+    }
+
+    public BufferedReader getLeitorBuffer() {
+        return leitorBuffer;
+    }
+
+    public void setLeitorBuffer(BufferedReader leitorBuffer) {
+        this.leitorBuffer = leitorBuffer;
+    }
+
+    public BufferedWriter getEscritorBuffer() {
+        return escritorBuffer;
+    }
+
+    public void setEscritorBuffer(BufferedWriter escritorBuffer) {
+        this.escritorBuffer = escritorBuffer;
     }
 
     public boolean abrirArquivo(Component parent) {
@@ -36,8 +56,8 @@ public class Arquivo {
 
     public boolean escrever(String texto, boolean append) {
         try {
-            escritorbuffer = new BufferedWriter(new FileWriter(arquivo, append));
-            escritorbuffer.write(texto);
+            escritorBuffer = new BufferedWriter(new FileWriter(arquivo, append));
+            escritorBuffer.write(texto);
             return true;
         } catch (IOException erro) {
             System.err.println("Erro: " + erro);
@@ -48,11 +68,11 @@ public class Arquivo {
     public String ler() {
         StringBuilder conteudoArquivo = new StringBuilder();
         try {
-            entrada = new BufferedReader(new FileReader(arquivo));
-            while (entrada.ready()) {
-                conteudoArquivo.append(entrada.readLine()).append("\n");
+            leitorBuffer = new BufferedReader(new FileReader(arquivo));
+            while (leitorBuffer.ready()) {
+                conteudoArquivo.append(leitorBuffer.readLine()).append("\n");
             }
-            entrada.close();
+            leitorBuffer.close();
             return conteudoArquivo.toString();
         } catch (IOException erro) {
             System.err.println("Erro: " + erro);
@@ -62,7 +82,7 @@ public class Arquivo {
 
     public boolean salvar() {
         try {
-            escritorbuffer.close();
+            escritorBuffer.close();
             return true;
         } catch (IOException erro) {
             System.err.println("Erro: " + erro);
@@ -89,7 +109,7 @@ public class Arquivo {
             return false;
         } else {
             try {
-                entrada = new BufferedReader(new FileReader(arquivo));
+                leitorBuffer = new BufferedReader(new FileReader(arquivo));
             } catch (IOException erro) {
                 System.err.println("Erro: " + erro);
                 return false;
