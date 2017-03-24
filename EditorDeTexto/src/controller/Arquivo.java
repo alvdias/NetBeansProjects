@@ -1,4 +1,4 @@
-package model;
+package controller;
 
 import java.awt.Component;
 import java.io.BufferedReader;
@@ -18,6 +18,9 @@ public class Arquivo {
     private File arquivo = null;
     private BufferedReader leitorBuffer = null;
     private BufferedWriter escritorBuffer = null;
+    
+    public static int ABRIRARQUIVO = 1;
+    public static int SALVARARQUIVO = 2;
 
     public File getArquivo() {
         return arquivo;
@@ -44,14 +47,24 @@ public class Arquivo {
     }
 
     public boolean abrirArquivo(Component parent) {
+        if (!apontarArquivo(Arquivo.ABRIRARQUIVO, parent)) return false;
+        return validarArquivo();
+    }
+
+    private boolean apontarArquivo(int tipo, Component parent) {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
-        int result = fileChooser.showOpenDialog(parent);
+        int result;
+        if (tipo == ABRIRARQUIVO) {
+            result = fileChooser.showOpenDialog(parent);
+        } else {
+            result = fileChooser.showSaveDialog(parent);
+        }
         if (result == JFileChooser.CANCEL_OPTION) {
             return false;
         }
         arquivo = fileChooser.getSelectedFile();
-        return validarArquivo();
+        return true;
     }
 
     public boolean escrever(String texto, boolean append) {
@@ -91,13 +104,7 @@ public class Arquivo {
     }
 
     public boolean salvarComo(String texto, Component parent) {
-        JFileChooser fileChooser = new JFileChooser();
-        fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
-        int result = fileChooser.showSaveDialog(parent);
-        if (result == JFileChooser.CANCEL_OPTION) {
-            return false;
-        }
-        arquivo = fileChooser.getSelectedFile();
+        if (!apontarArquivo(SALVARARQUIVO, parent)) return false;
         this.escrever(texto, false);
         this.salvar();
         return validarArquivo();
