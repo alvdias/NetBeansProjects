@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -104,7 +105,24 @@ public class Arquivo {
     }
 
     public boolean salvarComo(String texto, Component parent) {
-        if (!apontarArquivo(SALVARARQUIVO, parent)) return false;
+        while(true) {
+            if (!apontarArquivo(SALVARARQUIVO, parent)) return false;
+            if (arquivo.exists()) {
+                int result = JOptionPane.showConfirmDialog(parent,
+                        "Deseja sobrescrever este arquivo?");
+                switch (result) {
+                    case JOptionPane.CANCEL_OPTION:
+                        return false;
+                    case JOptionPane.OK_OPTION:
+                        break;
+                    case JOptionPane.NO_OPTION:
+                        continue;
+                    default:
+                        break;
+                }
+            }
+            break;
+        }
         this.escrever(texto, false);
         this.salvar();
         return validarArquivo();
