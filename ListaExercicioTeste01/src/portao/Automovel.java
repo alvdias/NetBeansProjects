@@ -9,13 +9,13 @@ package portao;
  *
  * @author diego
  */
-class Display {
+class Automovel {
 
-    void limpar() {
+    String getProprietario() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    void mostrarMsg(String msg) {
+    
+    String getPlaca() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

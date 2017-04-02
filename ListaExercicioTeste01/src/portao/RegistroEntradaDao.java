@@ -9,13 +9,9 @@ package portao;
  *
  * @author diego
  */
-class Display {
+class RegistroEntradaDao {
 
-    void limpar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void mostrarMsg(String msg) {
+    void registrarEntradaAgora(String placa, String proprietario) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

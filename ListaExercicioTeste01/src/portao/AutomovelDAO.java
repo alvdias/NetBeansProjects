@@ -9,13 +9,9 @@ package portao;
  *
  * @author diego
  */
-class Display {
+class AutomovelDAO {
 
-    void limpar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void mostrarMsg(String msg) {
+    Automovel getByTag(String tag) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
