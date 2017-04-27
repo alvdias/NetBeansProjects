@@ -1,0 +1,9 @@
+view.FrmCliente$1
+view.FrmCliente$3
+view.FrmCliente
+view.FrmCliente$2
+view.FrmCliente$5
+view.FrmCliente$4
+view.FrmCliente$7
+view.FrmCliente$6
+view.FrmCliente$8

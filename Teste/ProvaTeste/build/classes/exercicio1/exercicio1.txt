@@ -1,0 +1,6 @@
+a) Falso. Pois esta definiçao nos leva a fazer testes superficial em que
+ defeitos e erros dificilmente serao encontrados.
+b) caso de teste é o processo de inserir entradas ao programa,
+ colher os resultados e comparar com os resultados esperados
+c)Os niveis de teste sao nesta ordem: teste de unidade, teste de integraçao, e teste de sistema.
+d)Falso. Os testes exploratorios normalmente são aplicados a nivel de sistema.
