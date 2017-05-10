@@ -45,7 +45,65 @@ public class TomadorDeDecisaoTest
         
         // teste
         assertEquals(saidaEsperada, saidaObtida);
-        
-//        teste git
     }
+    
+    // 
+    @Test
+    public void ct01()
+    {
+        // condições
+        float valorDaCompra = 49.99F;
+        String tipoPagamento = "cheque";
+        boolean clienteTemCadastro = false;
+        TomadorDeDecisao td = new TomadorDeDecisao();
+        
+        // saída esperada
+        String saidaEsperada = "chame o supervisor";
+         
+        // saída obtida
+        String saidaObtida = td.tomarDecisao(valorDaCompra, tipoPagamento, clienteTemCadastro);
+        
+        // teste
+        assertEquals(saidaEsperada, saidaObtida);
+    }
+    
+    @Test
+    public void ct02()
+    {
+        // condições
+        float valorDaCompra = 50.01F;
+        String tipoPagamento = "cheque";
+        boolean clienteTemCadastro = true;
+        TomadorDeDecisao td = new TomadorDeDecisao();
+        
+        // saída esperada
+        String saidaEsperada = "chame o supervisor";
+         
+        // saída obtida
+        String saidaObtida = td.tomarDecisao(valorDaCompra, tipoPagamento, clienteTemCadastro);
+        
+        // teste
+        assertEquals(saidaEsperada, saidaObtida);
+    }
+    
+    @Test
+    public void ct03()
+    {
+        // condições
+        float valorDaCompra = 50.01F;
+        String tipoPagamento = "cheque";
+        boolean clienteTemCadastro = true;
+        TomadorDeDecisao td = new TomadorDeDecisao();
+        
+        // saída esperada
+        String saidaEsperada = "chame o supervisor";
+         
+        // saída obtida
+        String saidaObtida = td.tomarDecisao(valorDaCompra, tipoPagamento, clienteTemCadastro);
+        
+        // teste
+        assertEquals(saidaEsperada, saidaObtida);
+    }
+    
+    
 }
