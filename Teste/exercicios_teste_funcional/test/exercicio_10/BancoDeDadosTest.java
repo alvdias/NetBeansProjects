@@ -251,6 +251,7 @@ public class BancoDeDadosTest {
         
     }
     
+    //Numero de alunos valido 3 alunos
     public void AVL_06() {
         //Parametros
         String codigoDisciplina = "ab12c";
@@ -295,6 +296,7 @@ public class BancoDeDadosTest {
         
     }
     
+    //Numero de alunos valido 43 alunos
     public void AVL_08() {
         //Parametros
         String codigoDisciplina = "ab12c";
@@ -317,6 +319,7 @@ public class BancoDeDadosTest {
         
     }
     
+    //Numero de alunos valido 44 alunos
     public void AVL_09() {
         //Parametros
         String codigoDisciplina = "ab12c";
@@ -339,6 +342,7 @@ public class BancoDeDadosTest {
         
     }
     
+    //Numero de alunos invalido 45 alunos
     public void AVL_10() {
         //Parametros
         String codigoDisciplina = "ab12c";
