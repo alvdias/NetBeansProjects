@@ -1,3 +1,5 @@
+package exercicio_10;
+
 
 public interface VerificadorDeCodigos {
 

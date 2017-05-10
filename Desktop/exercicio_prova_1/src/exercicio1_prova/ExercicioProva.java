@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-public class ExercicioProva {
+public class ExercicioProva {    
     public static final boolean incluiTexto(File arquivo, String texto) throws IOException {
         if (arquivo.exists()) {
             BufferedReader leitorBuffer = new BufferedReader(new FileReader(arquivo));
@@ -14,6 +14,7 @@ public class ExercicioProva {
                     return true;
                 }
             }
+            leitorBuffer.close();
         }
         return false;
     }
