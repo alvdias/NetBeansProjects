@@ -58,7 +58,7 @@ public class BancoDeDadosTest {
         //Testes
         assertEquals("Sucesso", resp);
         verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoDisciplina);
-        verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoTurma);
+        verify(verificadorMock, times(1)).verificarCodigoTurma(codigoTurma);
         
     }
     
@@ -81,7 +81,7 @@ public class BancoDeDadosTest {
         //Testes
         assertEquals("Codigo de disciplina invalido", resp);
         verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoDisciplina);
-        verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoTurma);
+        verify(verificadorMock, times(1)).verificarCodigoTurma(codigoTurma);
         
     }
     
@@ -104,12 +104,35 @@ public class BancoDeDadosTest {
         //Testes
         assertEquals("Codigo de turma invalido", resp);
         verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoDisciplina);
-        verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoTurma);
+        verify(verificadorMock, times(1)).verificarCodigoTurma(codigoTurma);
         
     }
     
     @Test
     public void PCE_04() {
+        //Parametros
+        String codigoDisciplina = "ab12c";
+        String codigoTurma = "ab12";
+        int numeroAlunos = 1;
+        
+        //Mock
+        VerificadorDeCodigos verificadorMock = mock(VerificadorDeCodigos.class);
+        when(verificadorMock.verificarCodigoDisciplina(codigoDisciplina)).thenReturn(true);
+        when(verificadorMock.verificarCodigoTurma(codigoTurma)).thenReturn(true);
+        
+        //Chamada do Metodo
+        BancoDeDados bd = new BancoDeDados(verificadorMock);
+        String resp = bd.cadastrarTurma(codigoDisciplina, codigoTurma, numeroAlunos);
+        
+        //Testes
+        assertEquals("Numero de alunos invalido", resp);
+        verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoDisciplina);
+        verify(verificadorMock, times(1)).verificarCodigoTurma(codigoTurma);
+        
+    }
+    
+    @Test
+    public void PCE_05() {
         //Parametros
         String codigoDisciplina = "ab12c";
         String codigoTurma = "ab12";
@@ -127,7 +150,7 @@ public class BancoDeDadosTest {
         //Testes
         assertEquals("Numero de alunos invalido", resp);
         verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoDisciplina);
-        verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoTurma);
+        verify(verificadorMock, times(1)).verificarCodigoTurma(codigoTurma);
         
     }
     
@@ -151,7 +174,7 @@ public class BancoDeDadosTest {
         //Testes
         assertEquals("Codigo de disciplina invalido", resp);
         verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoDisciplina);
-        verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoTurma);
+        verify(verificadorMock, times(1)).verificarCodigoTurma(codigoTurma);
         
     }
     
@@ -175,7 +198,7 @@ public class BancoDeDadosTest {
         //Testes
         assertEquals("Codigo de disciplina invalido", resp);
         verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoDisciplina);
-        verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoTurma);
+        verify(verificadorMock, times(1)).verificarCodigoTurma(codigoTurma);
         
     }
     
@@ -199,7 +222,7 @@ public class BancoDeDadosTest {
         //Testes
         assertEquals("Codigo de turma invalido", resp);
         verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoDisciplina);
-        verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoTurma);
+        verify(verificadorMock, times(1)).verificarCodigoTurma(codigoTurma);
         
     }
     
@@ -223,7 +246,7 @@ public class BancoDeDadosTest {
         //Testes
         assertEquals("Codigo de turma invalido", resp);
         verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoDisciplina);
-        verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoTurma);
+        verify(verificadorMock, times(1)).verificarCodigoTurma(codigoTurma);
         
     }
     
@@ -247,7 +270,7 @@ public class BancoDeDadosTest {
         //Testes
         assertEquals("Numero de alunos invalido", resp);
         verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoDisciplina);
-        verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoTurma);
+        verify(verificadorMock, times(1)).verificarCodigoTurma(codigoTurma);
         
     }
     
@@ -270,7 +293,7 @@ public class BancoDeDadosTest {
         //Testes
         assertEquals("Sucesso", resp);
         verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoDisciplina);
-        verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoTurma);
+        verify(verificadorMock, times(1)).verificarCodigoTurma(codigoTurma);
         
     }
     
@@ -292,7 +315,7 @@ public class BancoDeDadosTest {
         //Testes
         assertEquals("Sucesso", resp);
         verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoDisciplina);
-        verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoTurma);
+        verify(verificadorMock, times(1)).verificarCodigoTurma(codigoTurma);
         
     }
     
@@ -315,7 +338,7 @@ public class BancoDeDadosTest {
         //Testes
         assertEquals("Sucesso", resp);
         verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoDisciplina);
-        verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoTurma);
+        verify(verificadorMock, times(1)).verificarCodigoTurma(codigoTurma);
         
     }
     
@@ -338,7 +361,7 @@ public class BancoDeDadosTest {
         //Testes
         assertEquals("Sucesso", resp);
         verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoDisciplina);
-        verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoTurma);
+        verify(verificadorMock, times(1)).verificarCodigoTurma(codigoTurma);
         
     }
     
@@ -361,12 +384,7 @@ public class BancoDeDadosTest {
         //Testes
         assertEquals("Numero de alunos invalido", resp);
         verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoDisciplina);
-        verify(verificadorMock, times(1)).verificarCodigoDisciplina(codigoTurma);
+        verify(verificadorMock, times(1)).verificarCodigoTurma(codigoTurma);
         
-        Character.isAlphabetic("ab12c".charAt(0));
-        Character.isAlphabetic("ab12c".charAt(1));
-        Character.isDigit("ab12c".charAt(2));
-        Character.isDigit("ab12c".charAt(3));
-        Character.isDigit("ab12c".charAt(4));
     }
 }
