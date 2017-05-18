@@ -55,6 +55,7 @@ public class TomadorDeDecisaoTest
         float valorDaCompra = 49.99F;
         String tipoPagamento = "cheque";
         boolean clienteTemCadastro = false;
+        
         TomadorDeDecisao td = new TomadorDeDecisao();
         
         // saída esperada
