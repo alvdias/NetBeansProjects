@@ -1,0 +1,1734 @@
+20:22:09,539  INFO Version:43 - Hibernate Annotations 3.5.0-Final
+20:22:09,555  INFO Environment:564 - Hibernate 3.5.0-Final
+20:22:09,558  INFO Environment:582 - loaded properties from resource hibernate.properties: {hibernate.connection.username=postgres, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.show_sql=true, hibernate.connection.url=jdbc:postgresql://localhost/banco_java_desktop, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true}
+20:22:09,560  INFO Environment:775 - Bytecode provider name : javassist
+20:22:09,563  INFO Environment:656 - using JDK 1.4 java.sql.Timestamp handling
+20:22:09,618 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [uuid] -> [class org.hibernate.id.UUIDHexGenerator]
+20:22:09,621 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [hilo] -> [class org.hibernate.id.TableHiLoGenerator]
+20:22:09,622 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [assigned] -> [class org.hibernate.id.Assigned]
+20:22:09,623 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [identity] -> [class org.hibernate.id.IdentityGenerator]
+20:22:09,624 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [select] -> [class org.hibernate.id.SelectGenerator]
+20:22:09,625 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [sequence] -> [class org.hibernate.id.SequenceGenerator]
+20:22:09,626 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [seqhilo] -> [class org.hibernate.id.SequenceHiLoGenerator]
+20:22:09,627 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [increment] -> [class org.hibernate.id.IncrementGenerator]
+20:22:09,628 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [foreign] -> [class org.hibernate.id.ForeignGenerator]
+20:22:09,629 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [guid] -> [class org.hibernate.id.GUIDGenerator]
+20:22:09,630 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [uuid.hex] -> [class org.hibernate.id.UUIDHexGenerator]
+20:22:09,630 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [sequence-identity] -> [class org.hibernate.id.SequenceIdentityGenerator]
+20:22:09,633 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [class org.hibernate.id.enhanced.SequenceStyleGenerator]
+20:22:09,636 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [enhanced-table] -> [class org.hibernate.id.enhanced.TableGenerator]
+20:22:09,642  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+20:22:09,670  INFO Dialect:222 - Using dialect: org.hibernate.dialect.PostgreSQLDialect
+20:22:09,703 DEBUG AnnotationConfiguration:318 - Execute first pass mapping processing
+20:22:09,736 DEBUG AnnotationConfiguration:617 - Process hbm files
+20:22:09,737 DEBUG AnnotationConfiguration:625 - Process annotated classes
+20:22:09,739  INFO AnnotationBinder:522 - Binding entity from annotated class: bancodados.Produto
+20:22:09,751 DEBUG Ejb3Column:187 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+20:22:09,753 DEBUG AnnotationBinder:977 - no value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+20:22:09,761 DEBUG EntityBinder:338 - Import with entity name Produto
+20:22:09,765  INFO EntityBinder:501 - Bind entity bancodados.Produto on table Produto
+20:22:09,785 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=id, insertable=true, updatable=true, unique=false}
+20:22:09,787 DEBUG PropertyBinder:175 - binding property id with lazy=false
+20:22:09,789 DEBUG SimpleValueBinder:294 - building SimpleValue for id
+20:22:09,790 DEBUG PropertyBinder:254 - Building property id
+20:22:09,792 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=descricao, insertable=true, updatable=true, unique=false}
+20:22:09,792 DEBUG PropertyBinder:175 - binding property descricao with lazy=false
+20:22:09,792 DEBUG SimpleValueBinder:294 - building SimpleValue for descricao
+20:22:09,792 DEBUG PropertyBinder:254 - Building property descricao
+20:22:09,793 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=nome, insertable=true, updatable=true, unique=false}
+20:22:09,793 DEBUG PropertyBinder:175 - binding property nome with lazy=false
+20:22:09,793 DEBUG SimpleValueBinder:294 - building SimpleValue for nome
+20:22:09,794 DEBUG PropertyBinder:254 - Building property nome
+20:22:09,794 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=preco, insertable=true, updatable=true, unique=false}
+20:22:09,794 DEBUG PropertyBinder:175 - binding property preco with lazy=false
+20:22:09,794 DEBUG SimpleValueBinder:294 - building SimpleValue for preco
+20:22:09,794 DEBUG PropertyBinder:254 - Building property preco
+20:22:09,795 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for id
+20:22:09,796 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for descricao
+20:22:09,796 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for nome
+20:22:09,796 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for preco
+20:22:09,796 DEBUG AnnotationConfiguration:486 - processing fk mappings (*ToOne and JoinedSubclass)
+20:22:09,797 DEBUG Configuration:1211 - processing extends queue
+20:22:09,797 DEBUG Configuration:1215 - processing collection mappings
+20:22:09,797 DEBUG Configuration:1226 - processing native query and ResultSetMapping mappings
+20:22:09,797 DEBUG Configuration:1234 - processing association property references
+20:22:09,797 DEBUG Configuration:1256 - processing foreign key constraints
+20:22:09,798  INFO AnnotationConfiguration:450 - Hibernate Validator not found: ignoring
+20:22:09,800 DEBUG DefaultIdentifierGeneratorFactory:89 - Setting dialect [org.hibernate.dialect.PostgreSQLDialect]
+20:22:09,810 DEBUG AnnotationConfiguration:318 - Execute first pass mapping processing
+20:22:09,810 DEBUG AnnotationConfiguration:617 - Process hbm files
+20:22:09,810 DEBUG AnnotationConfiguration:625 - Process annotated classes
+20:22:09,810 DEBUG AnnotationConfiguration:486 - processing fk mappings (*ToOne and JoinedSubclass)
+20:22:09,810 DEBUG Configuration:1211 - processing extends queue
+20:22:09,811 DEBUG Configuration:1215 - processing collection mappings
+20:22:09,811 DEBUG Configuration:1226 - processing native query and ResultSetMapping mappings
+20:22:09,811 DEBUG Configuration:1234 - processing association property references
+20:22:09,811 DEBUG Configuration:1256 - processing foreign key constraints
+20:22:09,812 DEBUG DefaultIdentifierGeneratorFactory:89 - Setting dialect [org.hibernate.dialect.PostgreSQLDialect]
+20:22:09,812 DEBUG DefaultIdentifierGeneratorFactory:89 - Setting dialect [org.hibernate.dialect.PostgreSQLDialect]
+20:22:09,814  INFO SchemaExport:226 - Running hbm2ddl schema export
+20:22:09,814 DEBUG SchemaExport:242 - import file not found: /import.sql
+20:22:09,815  INFO SchemaExport:251 - exporting generated schema to database
+20:22:09,816  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+20:22:09,817  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+20:22:09,817  INFO DriverManagerConnectionProvider:68 - autocommit mode: false
+20:22:09,829  INFO DriverManagerConnectionProvider:103 - using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost/banco_java_desktop
+20:22:09,829  INFO DriverManagerConnectionProvider:106 - connection properties: {user=postgres, password=q6g18368q}
+20:22:09,829 DEBUG DriverManagerConnectionProvider:132 - opening new JDBC connection
+20:22:09,925 DEBUG DriverManagerConnectionProvider:138 - created connection to: jdbc:postgresql://localhost/banco_java_desktop, Isolation Level: 2
+20:22:09,926 DEBUG SchemaExport:377 - 
+    drop table Produto
+20:22:09,929 DEBUG SchemaExport:377 - 
+    drop sequence hibernate_sequence
+20:22:09,931 DEBUG SchemaExport:377 - 
+    create table Produto (
+        id int8 not null,
+        descricao varchar(50),
+        nome varchar(50),
+        preco float8,
+        primary key (id)
+    )
+20:22:09,936 DEBUG SchemaExport:377 - 
+    create sequence hibernate_sequence
+20:22:09,938  INFO SchemaExport:268 - schema export complete
+20:22:09,939  INFO DriverManagerConnectionProvider:170 - cleaning up connection pool: jdbc:postgresql://localhost/banco_java_desktop
+20:22:09,946  INFO DriverManagerConnectionProvider:170 - cleaning up connection pool: jdbc:postgresql://localhost/banco_java_desktop
+20:41:41,599  INFO Version:43 - Hibernate Annotations 3.5.0-Final
+20:41:41,614  INFO Environment:564 - Hibernate 3.5.0-Final
+20:41:41,616  INFO Environment:582 - loaded properties from resource hibernate.properties: {hibernate.connection.username=postgres, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.show_sql=true, hibernate.connection.url=jdbc:postgresql://localhost/banco_java_desktop, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true}
+20:41:41,619  INFO Environment:775 - Bytecode provider name : javassist
+20:41:41,622  INFO Environment:656 - using JDK 1.4 java.sql.Timestamp handling
+20:41:41,677 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [uuid] -> [class org.hibernate.id.UUIDHexGenerator]
+20:41:41,680 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [hilo] -> [class org.hibernate.id.TableHiLoGenerator]
+20:41:41,681 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [assigned] -> [class org.hibernate.id.Assigned]
+20:41:41,682 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [identity] -> [class org.hibernate.id.IdentityGenerator]
+20:41:41,683 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [select] -> [class org.hibernate.id.SelectGenerator]
+20:41:41,684 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [sequence] -> [class org.hibernate.id.SequenceGenerator]
+20:41:41,685 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [seqhilo] -> [class org.hibernate.id.SequenceHiLoGenerator]
+20:41:41,686 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [increment] -> [class org.hibernate.id.IncrementGenerator]
+20:41:41,688 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [foreign] -> [class org.hibernate.id.ForeignGenerator]
+20:41:41,689 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [guid] -> [class org.hibernate.id.GUIDGenerator]
+20:41:41,690 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [uuid.hex] -> [class org.hibernate.id.UUIDHexGenerator]
+20:41:41,690 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [sequence-identity] -> [class org.hibernate.id.SequenceIdentityGenerator]
+20:41:41,692 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [class org.hibernate.id.enhanced.SequenceStyleGenerator]
+20:41:41,694 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [enhanced-table] -> [class org.hibernate.id.enhanced.TableGenerator]
+20:41:41,701  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+20:41:41,718 DEBUG AnnotationConfiguration:973 - Legacy Validator not present in classpath, ignoring event listener registration
+20:41:41,722 DEBUG HibernateSearchEventListenerRegister:231 - Search not present in classpath, ignoring event listener registration.
+20:41:41,723  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+20:41:41,723 DEBUG Configuration:1376 - Preparing to build session factory with filters : {}
+20:41:41,723 DEBUG AnnotationConfiguration:318 - Execute first pass mapping processing
+20:41:41,760 DEBUG AnnotationConfiguration:617 - Process hbm files
+20:41:41,760 DEBUG AnnotationConfiguration:625 - Process annotated classes
+20:41:41,766  INFO AnnotationBinder:522 - Binding entity from annotated class: bancodados.Produto
+20:41:41,778 DEBUG Ejb3Column:187 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+20:41:41,780 DEBUG AnnotationBinder:977 - no value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+20:41:41,789 DEBUG EntityBinder:338 - Import with entity name Produto
+20:41:41,792  INFO EntityBinder:501 - Bind entity bancodados.Produto on table Produto
+20:41:41,814 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=id, insertable=true, updatable=true, unique=false}
+20:41:41,816 DEBUG PropertyBinder:175 - binding property id with lazy=false
+20:41:41,818 DEBUG SimpleValueBinder:294 - building SimpleValue for id
+20:41:41,819 DEBUG PropertyBinder:254 - Building property id
+20:41:41,822 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=descricao, insertable=true, updatable=true, unique=false}
+20:41:41,822 DEBUG PropertyBinder:175 - binding property descricao with lazy=false
+20:41:41,823 DEBUG SimpleValueBinder:294 - building SimpleValue for descricao
+20:41:41,823 DEBUG PropertyBinder:254 - Building property descricao
+20:41:41,824 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=nome, insertable=true, updatable=true, unique=false}
+20:41:41,824 DEBUG PropertyBinder:175 - binding property nome with lazy=false
+20:41:41,824 DEBUG SimpleValueBinder:294 - building SimpleValue for nome
+20:41:41,825 DEBUG PropertyBinder:254 - Building property nome
+20:41:41,825 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=preco, insertable=true, updatable=true, unique=false}
+20:41:41,826 DEBUG PropertyBinder:175 - binding property preco with lazy=false
+20:41:41,826 DEBUG SimpleValueBinder:294 - building SimpleValue for preco
+20:41:41,826 DEBUG PropertyBinder:254 - Building property preco
+20:41:41,828 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for id
+20:41:41,829 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for descricao
+20:41:41,829 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for nome
+20:41:41,829 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for preco
+20:41:41,830 DEBUG AnnotationConfiguration:486 - processing fk mappings (*ToOne and JoinedSubclass)
+20:41:41,831 DEBUG Configuration:1211 - processing extends queue
+20:41:41,831 DEBUG Configuration:1215 - processing collection mappings
+20:41:41,832 DEBUG Configuration:1226 - processing native query and ResultSetMapping mappings
+20:41:41,832 DEBUG Configuration:1234 - processing association property references
+20:41:41,832 DEBUG Configuration:1256 - processing foreign key constraints
+20:41:41,833  INFO AnnotationConfiguration:450 - Hibernate Validator not found: ignoring
+20:41:41,865  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+20:41:41,865  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+20:41:41,865  INFO DriverManagerConnectionProvider:68 - autocommit mode: false
+20:41:41,878  INFO DriverManagerConnectionProvider:103 - using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost/banco_java_desktop
+20:41:41,879  INFO DriverManagerConnectionProvider:106 - connection properties: {user=postgres, password=q6g18368q}
+20:41:41,879 DEBUG DriverManagerConnectionProvider:132 - opening new JDBC connection
+20:41:41,986 DEBUG DriverManagerConnectionProvider:138 - created connection to: jdbc:postgresql://localhost/banco_java_desktop, Isolation Level: 2
+20:41:41,990  INFO SettingsFactory:117 - RDBMS: PostgreSQL, version: 9.5.6
+20:41:41,990  INFO SettingsFactory:118 - JDBC driver: PostgreSQL JDBC Driver, version: 42.0.0
+20:41:42,003  INFO Dialect:222 - Using dialect: org.hibernate.dialect.PostgreSQLDialect
+20:41:42,015  INFO JdbcSupportLoader:108 - Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+20:41:42,016  INFO TransactionFactoryFactory:59 - Using default transaction strategy (direct JDBC transactions)
+20:41:42,017  INFO TransactionManagerLookupFactory:80 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+20:41:42,018  INFO SettingsFactory:169 - Automatic flush during beforeCompletion(): disabled
+20:41:42,018  INFO SettingsFactory:173 - Automatic session close at end of transaction: disabled
+20:41:42,018  INFO SettingsFactory:180 - JDBC batch size: 15
+20:41:42,018  INFO SettingsFactory:183 - JDBC batch updates for versioned data: disabled
+20:41:42,019  INFO SettingsFactory:188 - Scrollable result sets: enabled
+20:41:42,019 DEBUG SettingsFactory:192 - Wrap result sets: disabled
+20:41:42,019  INFO SettingsFactory:196 - JDBC3 getGeneratedKeys(): enabled
+20:41:42,019  INFO SettingsFactory:204 - Connection release mode: auto
+20:41:42,020  INFO SettingsFactory:231 - Default batch fetch size: 1
+20:41:42,020  INFO SettingsFactory:235 - Generate SQL with comments: disabled
+20:41:42,020  INFO SettingsFactory:239 - Order SQL updates by primary key: disabled
+20:41:42,021  INFO SettingsFactory:243 - Order SQL inserts for batching: disabled
+20:41:42,021  INFO SettingsFactory:410 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+20:41:42,022  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+20:41:42,023  INFO SettingsFactory:251 - Query language substitutions: {}
+20:41:42,023  INFO SettingsFactory:256 - JPA-QL strict compliance: disabled
+20:41:42,023  INFO SettingsFactory:261 - Second-level cache: enabled
+20:41:42,023  INFO SettingsFactory:265 - Query cache: disabled
+20:41:42,024  INFO SettingsFactory:395 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+20:41:42,024  INFO SettingsFactory:275 - Optimize cache for minimal puts: disabled
+20:41:42,024  INFO SettingsFactory:284 - Structured second-level cache entries: disabled
+20:41:42,027  INFO SettingsFactory:304 - Echoing all SQL to stdout
+20:41:42,028  INFO SettingsFactory:313 - Statistics: disabled
+20:41:42,028  INFO SettingsFactory:317 - Deleted entity synthetic identifier rollback: disabled
+20:41:42,029  INFO SettingsFactory:332 - Default entity-mode: pojo
+20:41:42,029  INFO SettingsFactory:336 - Named query checking : enabled
+20:41:42,029  INFO SettingsFactory:340 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+20:41:42,058  INFO SessionFactoryImpl:199 - building session factory
+20:41:42,061 DEBUG SessionFactoryImpl:238 - Session factory constructed with filter configurations : {}
+20:41:42,062 DEBUG SessionFactoryImpl:242 - instantiating session factory with properties: {java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.password=q6g18368q, sun.boot.library.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64, java.vm.version=25.131-b11, hibernate.connection.username=postgres, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=OpenJDK 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=BR, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/diego/NetBeansProjects/Desktop/hibernate, java.runtime.version=1.8.0_131-8u131-b11-0ubuntu1.16.04.2-b11, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.endorsed.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed, os.arch=amd64, java.io.tmpdir=/tmp, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/lib/jvm/default-java/jre/lib/amd64:/usr/lib/jvm/default-java/jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=4.8.0-52-generic, user.home=/home/diego, user.timezone=America/Sao_Paulo, java.awt.printerjob=sun.print.PSPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, hibernate.format_sql=true, hibernate.connection.driver_class=org.postgresql.Driver, user.name=diego, java.class.path=/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/antlr-2.7.6.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/c3p0-0.9.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/commons-collections-3.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/dom4j-1.6.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/ehcache-1.5.0.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/hibernate-jpa-2.0-api-1.0.0.Final.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/hibernate-jpamodelgen-1.0.0.Final.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/hibernate3.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/javassist-3.9.0.GA.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/jta-1.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/log4j-1.2.15.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/mysql-connector-java-5.0.7-bin.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/slf4j-api-1.5.8.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/slf4j-log4j12-1.5.8.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/postgresql-42.0.0.jar:/home/diego/NetBeansProjects/Desktop/hibernate/build/classes, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre, sun.java.command=bancodados.AdicionaProduto, hibernate.connection.url=jdbc:postgresql://localhost/banco_java_desktop, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, java.specification.vendor=Oracle Corporation, user.language=pt, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.8.0_131, java.ext.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes, java.vendor=Oracle Corporation, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=gnome, sun.cpu.isalist=}
+20:41:42,062 DEBUG DefaultIdentifierGeneratorFactory:89 - Setting dialect [org.hibernate.dialect.PostgreSQLDialect]
+20:41:42,139 DEBUG AbstractEntityPersister:2936 - Static SQL for entity: bancodados.Produto
+20:41:42,140 DEBUG AbstractEntityPersister:2941 -  Version select: select id from Produto where id =?
+20:41:42,140 DEBUG AbstractEntityPersister:2944 -  Snapshot select: select produto_.id, produto_.descricao as descricao0_, produto_.nome as nome0_, produto_.preco as preco0_ from Produto produto_ where produto_.id=?
+20:41:42,140 DEBUG AbstractEntityPersister:2947 -  Insert 0: insert into Produto (descricao, nome, preco, id) values (?, ?, ?, ?)
+20:41:42,140 DEBUG AbstractEntityPersister:2948 -  Update 0: update Produto set descricao=?, nome=?, preco=? where id=?
+20:41:42,140 DEBUG AbstractEntityPersister:2949 -  Delete 0: delete from Produto where id=?
+20:41:42,153 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [NONE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+20:41:42,154 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [READ]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+20:41:42,154 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [UPGRADE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+20:41:42,154 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [UPGRADE_NOWAIT]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+20:41:42,155 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [FORCE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+20:41:42,155 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [PESSIMISTIC_READ]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for share
+20:41:42,155 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [PESSIMISTIC_WRITE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+20:41:42,155 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [PESSIMISTIC_FORCE_INCREMENT]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+20:41:42,159 DEBUG EntityLoader:56 - Static select for action ACTION_MERGE on entity bancodados.Produto: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+20:41:42,159 DEBUG EntityLoader:56 - Static select for action ACTION_REFRESH on entity bancodados.Produto: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+20:41:42,162 DEBUG SessionFactoryObjectFactory:62 - initializing class SessionFactoryObjectFactory
+20:41:42,163 DEBUG SessionFactoryObjectFactory:99 - registered: ff8081815c37b005015c37b007900000 (unnamed)
+20:41:42,163  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+20:41:42,163 DEBUG SessionFactoryImpl:378 - instantiated session factory
+20:41:42,164 DEBUG SessionFactoryImpl:547 - Checking 0 named HQL queries
+20:41:42,164 DEBUG SessionFactoryImpl:567 - Checking 0 named SQL queries
+20:41:42,189 DEBUG SessionImpl:257 - opened session at timestamp: 14955829021
+20:41:42,190 DEBUG JDBCTransaction:82 - begin
+20:41:42,190 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,191 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,192 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,195 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,202 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[1]]
+20:41:42,203 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,203 DEBUG AbstractSaveEventListener:135 - generated identifier: 1, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,212 DEBUG JDBCTransaction:134 - commit
+20:41:42,213 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,214 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,216 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+20:41:42,216 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,217 DEBUG Printer:106 - listing entities:
+20:41:42,218 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,220 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,221 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,225 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,228 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,230 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,230 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,230 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,231 DEBUG JDBCTransaction:82 - begin
+20:41:42,231 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,231 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,231 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,232 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,232 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[2]]
+20:41:42,233 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,233 DEBUG AbstractSaveEventListener:135 - generated identifier: 2, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,233 DEBUG JDBCTransaction:134 - commit
+20:41:42,233 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,234 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,234 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 2 objects
+20:41:42,234 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,234 DEBUG Printer:106 - listing entities:
+20:41:42,234 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,235 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,235 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,235 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,235 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,236 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,237 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,238 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,238 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,238 DEBUG JDBCTransaction:82 - begin
+20:41:42,238 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,238 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,238 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,239 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,240 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[3]]
+20:41:42,240 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,240 DEBUG AbstractSaveEventListener:135 - generated identifier: 3, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,241 DEBUG JDBCTransaction:134 - commit
+20:41:42,241 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,241 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,241 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 3 objects
+20:41:42,241 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,242 DEBUG Printer:106 - listing entities:
+20:41:42,242 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,242 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,242 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,242 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,243 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,243 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,244 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,245 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,245 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,245 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,245 DEBUG JDBCTransaction:82 - begin
+20:41:42,245 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,245 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,246 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,246 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,247 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[4]]
+20:41:42,247 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,248 DEBUG AbstractSaveEventListener:135 - generated identifier: 4, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,248 DEBUG JDBCTransaction:134 - commit
+20:41:42,248 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,248 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,248 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 4 objects
+20:41:42,249 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,249 DEBUG Printer:106 - listing entities:
+20:41:42,249 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,249 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,249 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,249 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,249 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,249 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,250 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,250 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,252 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,253 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,253 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,253 DEBUG JDBCTransaction:82 - begin
+20:41:42,253 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,253 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,253 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,254 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,254 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[5]]
+20:41:42,255 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,255 DEBUG AbstractSaveEventListener:135 - generated identifier: 5, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,255 DEBUG JDBCTransaction:134 - commit
+20:41:42,255 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,256 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,256 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 5 objects
+20:41:42,256 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,257 DEBUG Printer:106 - listing entities:
+20:41:42,257 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,257 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,257 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,258 DEBUG Printer:113 - bancodados.Produto{preco=502.5, nome=Nome-5, id=5, descricao=Descrição-5}
+20:41:42,258 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,258 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,258 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,259 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,260 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,261 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,262 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,262 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,262 DEBUG JDBCTransaction:82 - begin
+20:41:42,262 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,262 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,263 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,264 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,265 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[6]]
+20:41:42,265 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,265 DEBUG AbstractSaveEventListener:135 - generated identifier: 6, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,266 DEBUG JDBCTransaction:134 - commit
+20:41:42,266 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,266 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,267 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 6 objects
+20:41:42,267 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,267 DEBUG Printer:106 - listing entities:
+20:41:42,267 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,268 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,268 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,268 DEBUG Printer:113 - bancodados.Produto{preco=603.0, nome=Nome-6, id=6, descricao=Descrição-6}
+20:41:42,268 DEBUG Printer:113 - bancodados.Produto{preco=502.5, nome=Nome-5, id=5, descricao=Descrição-5}
+20:41:42,268 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,269 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,269 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,269 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,270 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,271 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,271 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,271 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,272 DEBUG JDBCTransaction:82 - begin
+20:41:42,272 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,272 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,272 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,272 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,273 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[7]]
+20:41:42,273 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,273 DEBUG AbstractSaveEventListener:135 - generated identifier: 7, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,274 DEBUG JDBCTransaction:134 - commit
+20:41:42,274 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,274 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,275 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 7 objects
+20:41:42,275 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,275 DEBUG Printer:106 - listing entities:
+20:41:42,275 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,275 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,276 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,276 DEBUG Printer:113 - bancodados.Produto{preco=703.5, nome=Nome-7, id=7, descricao=Descrição-7}
+20:41:42,276 DEBUG Printer:113 - bancodados.Produto{preco=603.0, nome=Nome-6, id=6, descricao=Descrição-6}
+20:41:42,276 DEBUG Printer:113 - bancodados.Produto{preco=502.5, nome=Nome-5, id=5, descricao=Descrição-5}
+20:41:42,276 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,277 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,277 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,277 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,278 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,279 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,279 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,279 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,280 DEBUG JDBCTransaction:82 - begin
+20:41:42,280 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,280 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,280 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,280 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,281 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[8]]
+20:41:42,281 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,281 DEBUG AbstractSaveEventListener:135 - generated identifier: 8, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,282 DEBUG JDBCTransaction:134 - commit
+20:41:42,282 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,282 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,282 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 8 objects
+20:41:42,283 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,283 DEBUG Printer:106 - listing entities:
+20:41:42,283 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,283 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,283 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,283 DEBUG Printer:113 - bancodados.Produto{preco=703.5, nome=Nome-7, id=7, descricao=Descrição-7}
+20:41:42,284 DEBUG Printer:113 - bancodados.Produto{preco=603.0, nome=Nome-6, id=6, descricao=Descrição-6}
+20:41:42,284 DEBUG Printer:113 - bancodados.Produto{preco=502.5, nome=Nome-5, id=5, descricao=Descrição-5}
+20:41:42,284 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,284 DEBUG Printer:113 - bancodados.Produto{preco=804.0, nome=Nome-8, id=8, descricao=Descrição-8}
+20:41:42,284 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,285 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,285 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,286 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,287 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,287 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,287 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,287 DEBUG JDBCTransaction:82 - begin
+20:41:42,287 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,288 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,288 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,288 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,289 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[9]]
+20:41:42,289 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,289 DEBUG AbstractSaveEventListener:135 - generated identifier: 9, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,289 DEBUG JDBCTransaction:134 - commit
+20:41:42,289 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,290 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,291 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 9 objects
+20:41:42,291 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,291 DEBUG Printer:106 - listing entities:
+20:41:42,291 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,291 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,291 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,292 DEBUG Printer:113 - bancodados.Produto{preco=703.5, nome=Nome-7, id=7, descricao=Descrição-7}
+20:41:42,292 DEBUG Printer:113 - bancodados.Produto{preco=603.0, nome=Nome-6, id=6, descricao=Descrição-6}
+20:41:42,292 DEBUG Printer:113 - bancodados.Produto{preco=502.5, nome=Nome-5, id=5, descricao=Descrição-5}
+20:41:42,292 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,292 DEBUG Printer:113 - bancodados.Produto{preco=904.5, nome=Nome-9, id=9, descricao=Descrição-9}
+20:41:42,293 DEBUG Printer:113 - bancodados.Produto{preco=804.0, nome=Nome-8, id=8, descricao=Descrição-8}
+20:41:42,293 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,293 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,293 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,294 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,296 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,296 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,298 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,298 DEBUG JDBCTransaction:82 - begin
+20:41:42,299 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,299 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,299 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,299 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,300 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[10]]
+20:41:42,300 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,300 DEBUG AbstractSaveEventListener:135 - generated identifier: 10, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,300 DEBUG JDBCTransaction:134 - commit
+20:41:42,300 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,301 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,301 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 10 objects
+20:41:42,301 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,301 DEBUG Printer:106 - listing entities:
+20:41:42,302 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,302 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,302 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,302 DEBUG Printer:113 - bancodados.Produto{preco=703.5, nome=Nome-7, id=7, descricao=Descrição-7}
+20:41:42,302 DEBUG Printer:113 - bancodados.Produto{preco=603.0, nome=Nome-6, id=6, descricao=Descrição-6}
+20:41:42,302 DEBUG Printer:113 - bancodados.Produto{preco=502.5, nome=Nome-5, id=5, descricao=Descrição-5}
+20:41:42,303 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,303 DEBUG Printer:113 - bancodados.Produto{preco=1005.0, nome=Nome-10, id=10, descricao=Descrição-10}
+20:41:42,303 DEBUG Printer:113 - bancodados.Produto{preco=904.5, nome=Nome-9, id=9, descricao=Descrição-9}
+20:41:42,303 DEBUG Printer:113 - bancodados.Produto{preco=804.0, nome=Nome-8, id=8, descricao=Descrição-8}
+20:41:42,303 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,303 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,304 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,304 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,306 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,306 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,306 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,306 DEBUG JDBCTransaction:82 - begin
+20:41:42,306 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,306 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,306 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,307 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,308 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[11]]
+20:41:42,308 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,308 DEBUG AbstractSaveEventListener:135 - generated identifier: 11, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,309 DEBUG JDBCTransaction:134 - commit
+20:41:42,309 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,309 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,310 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 11 objects
+20:41:42,310 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,310 DEBUG Printer:106 - listing entities:
+20:41:42,310 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,311 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,311 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,311 DEBUG Printer:113 - bancodados.Produto{preco=703.5, nome=Nome-7, id=7, descricao=Descrição-7}
+20:41:42,311 DEBUG Printer:113 - bancodados.Produto{preco=603.0, nome=Nome-6, id=6, descricao=Descrição-6}
+20:41:42,311 DEBUG Printer:113 - bancodados.Produto{preco=502.5, nome=Nome-5, id=5, descricao=Descrição-5}
+20:41:42,311 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,312 DEBUG Printer:113 - bancodados.Produto{preco=1105.5, nome=Nome-11, id=11, descricao=Descrição-11}
+20:41:42,312 DEBUG Printer:113 - bancodados.Produto{preco=1005.0, nome=Nome-10, id=10, descricao=Descrição-10}
+20:41:42,312 DEBUG Printer:113 - bancodados.Produto{preco=904.5, nome=Nome-9, id=9, descricao=Descrição-9}
+20:41:42,312 DEBUG Printer:113 - bancodados.Produto{preco=804.0, nome=Nome-8, id=8, descricao=Descrição-8}
+20:41:42,312 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,313 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,314 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,315 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,320 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,321 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,321 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,321 DEBUG JDBCTransaction:82 - begin
+20:41:42,321 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,322 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,322 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,326 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,329 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[12]]
+20:41:42,329 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,329 DEBUG AbstractSaveEventListener:135 - generated identifier: 12, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,330 DEBUG JDBCTransaction:134 - commit
+20:41:42,330 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,330 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,332 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 12 objects
+20:41:42,332 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,332 DEBUG Printer:106 - listing entities:
+20:41:42,333 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,333 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,333 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,334 DEBUG Printer:113 - bancodados.Produto{preco=703.5, nome=Nome-7, id=7, descricao=Descrição-7}
+20:41:42,334 DEBUG Printer:113 - bancodados.Produto{preco=603.0, nome=Nome-6, id=6, descricao=Descrição-6}
+20:41:42,334 DEBUG Printer:113 - bancodados.Produto{preco=502.5, nome=Nome-5, id=5, descricao=Descrição-5}
+20:41:42,335 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,335 DEBUG Printer:113 - bancodados.Produto{preco=1105.5, nome=Nome-11, id=11, descricao=Descrição-11}
+20:41:42,335 DEBUG Printer:113 - bancodados.Produto{preco=1005.0, nome=Nome-10, id=10, descricao=Descrição-10}
+20:41:42,335 DEBUG Printer:113 - bancodados.Produto{preco=904.5, nome=Nome-9, id=9, descricao=Descrição-9}
+20:41:42,336 DEBUG Printer:113 - bancodados.Produto{preco=804.0, nome=Nome-8, id=8, descricao=Descrição-8}
+20:41:42,336 DEBUG Printer:113 - bancodados.Produto{preco=1206.0, nome=Nome-12, id=12, descricao=Descrição-12}
+20:41:42,336 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,337 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,337 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,338 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,339 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,339 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,340 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,340 DEBUG JDBCTransaction:82 - begin
+20:41:42,340 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,340 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,340 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,341 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,351 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[13]]
+20:41:42,352 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,352 DEBUG AbstractSaveEventListener:135 - generated identifier: 13, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,352 DEBUG JDBCTransaction:134 - commit
+20:41:42,352 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,352 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,353 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 13 objects
+20:41:42,353 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,353 DEBUG Printer:106 - listing entities:
+20:41:42,353 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,353 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,353 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,354 DEBUG Printer:113 - bancodados.Produto{preco=703.5, nome=Nome-7, id=7, descricao=Descrição-7}
+20:41:42,354 DEBUG Printer:113 - bancodados.Produto{preco=603.0, nome=Nome-6, id=6, descricao=Descrição-6}
+20:41:42,354 DEBUG Printer:113 - bancodados.Produto{preco=502.5, nome=Nome-5, id=5, descricao=Descrição-5}
+20:41:42,354 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,354 DEBUG Printer:113 - bancodados.Produto{preco=1105.5, nome=Nome-11, id=11, descricao=Descrição-11}
+20:41:42,354 DEBUG Printer:113 - bancodados.Produto{preco=1005.0, nome=Nome-10, id=10, descricao=Descrição-10}
+20:41:42,354 DEBUG Printer:113 - bancodados.Produto{preco=904.5, nome=Nome-9, id=9, descricao=Descrição-9}
+20:41:42,354 DEBUG Printer:113 - bancodados.Produto{preco=804.0, nome=Nome-8, id=8, descricao=Descrição-8}
+20:41:42,354 DEBUG Printer:113 - bancodados.Produto{preco=1306.5, nome=Nome-13, id=13, descricao=Descrição-13}
+20:41:42,355 DEBUG Printer:113 - bancodados.Produto{preco=1206.0, nome=Nome-12, id=12, descricao=Descrição-12}
+20:41:42,355 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,355 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,355 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,356 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,358 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,358 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,358 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,358 DEBUG JDBCTransaction:82 - begin
+20:41:42,358 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,358 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,358 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,358 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,359 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[14]]
+20:41:42,359 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,360 DEBUG AbstractSaveEventListener:135 - generated identifier: 14, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,360 DEBUG JDBCTransaction:134 - commit
+20:41:42,360 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,361 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,361 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 14 objects
+20:41:42,361 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,361 DEBUG Printer:106 - listing entities:
+20:41:42,362 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,362 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,362 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,362 DEBUG Printer:113 - bancodados.Produto{preco=703.5, nome=Nome-7, id=7, descricao=Descrição-7}
+20:41:42,362 DEBUG Printer:113 - bancodados.Produto{preco=603.0, nome=Nome-6, id=6, descricao=Descrição-6}
+20:41:42,362 DEBUG Printer:113 - bancodados.Produto{preco=502.5, nome=Nome-5, id=5, descricao=Descrição-5}
+20:41:42,363 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,363 DEBUG Printer:113 - bancodados.Produto{preco=1105.5, nome=Nome-11, id=11, descricao=Descrição-11}
+20:41:42,363 DEBUG Printer:113 - bancodados.Produto{preco=1005.0, nome=Nome-10, id=10, descricao=Descrição-10}
+20:41:42,363 DEBUG Printer:113 - bancodados.Produto{preco=904.5, nome=Nome-9, id=9, descricao=Descrição-9}
+20:41:42,363 DEBUG Printer:113 - bancodados.Produto{preco=804.0, nome=Nome-8, id=8, descricao=Descrição-8}
+20:41:42,364 DEBUG Printer:113 - bancodados.Produto{preco=1407.0, nome=Nome-14, id=14, descricao=Descrição-14}
+20:41:42,364 DEBUG Printer:113 - bancodados.Produto{preco=1306.5, nome=Nome-13, id=13, descricao=Descrição-13}
+20:41:42,364 DEBUG Printer:113 - bancodados.Produto{preco=1206.0, nome=Nome-12, id=12, descricao=Descrição-12}
+20:41:42,364 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,364 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,365 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,366 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,367 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,367 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,367 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,368 DEBUG JDBCTransaction:82 - begin
+20:41:42,368 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,368 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,368 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,368 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,369 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[15]]
+20:41:42,369 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,369 DEBUG AbstractSaveEventListener:135 - generated identifier: 15, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,370 DEBUG JDBCTransaction:134 - commit
+20:41:42,370 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,370 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,370 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 15 objects
+20:41:42,371 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,371 DEBUG Printer:106 - listing entities:
+20:41:42,371 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,371 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,371 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,371 DEBUG Printer:113 - bancodados.Produto{preco=703.5, nome=Nome-7, id=7, descricao=Descrição-7}
+20:41:42,372 DEBUG Printer:113 - bancodados.Produto{preco=603.0, nome=Nome-6, id=6, descricao=Descrição-6}
+20:41:42,372 DEBUG Printer:113 - bancodados.Produto{preco=502.5, nome=Nome-5, id=5, descricao=Descrição-5}
+20:41:42,372 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,372 DEBUG Printer:113 - bancodados.Produto{preco=1105.5, nome=Nome-11, id=11, descricao=Descrição-11}
+20:41:42,372 DEBUG Printer:113 - bancodados.Produto{preco=1005.0, nome=Nome-10, id=10, descricao=Descrição-10}
+20:41:42,372 DEBUG Printer:113 - bancodados.Produto{preco=904.5, nome=Nome-9, id=9, descricao=Descrição-9}
+20:41:42,372 DEBUG Printer:113 - bancodados.Produto{preco=804.0, nome=Nome-8, id=8, descricao=Descrição-8}
+20:41:42,373 DEBUG Printer:113 - bancodados.Produto{preco=1507.5, nome=Nome-15, id=15, descricao=Descrição-15}
+20:41:42,373 DEBUG Printer:113 - bancodados.Produto{preco=1407.0, nome=Nome-14, id=14, descricao=Descrição-14}
+20:41:42,373 DEBUG Printer:113 - bancodados.Produto{preco=1306.5, nome=Nome-13, id=13, descricao=Descrição-13}
+20:41:42,373 DEBUG Printer:113 - bancodados.Produto{preco=1206.0, nome=Nome-12, id=12, descricao=Descrição-12}
+20:41:42,373 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,374 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,374 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,376 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,378 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,378 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,378 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,378 DEBUG JDBCTransaction:82 - begin
+20:41:42,378 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,378 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,378 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,378 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,379 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[16]]
+20:41:42,379 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,379 DEBUG AbstractSaveEventListener:135 - generated identifier: 16, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,380 DEBUG JDBCTransaction:134 - commit
+20:41:42,380 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,380 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,381 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 16 objects
+20:41:42,381 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,381 DEBUG Printer:106 - listing entities:
+20:41:42,381 DEBUG Printer:113 - bancodados.Produto{preco=1608.0, nome=Nome-16, id=16, descricao=Descrição-16}
+20:41:42,381 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,382 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,382 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,382 DEBUG Printer:113 - bancodados.Produto{preco=703.5, nome=Nome-7, id=7, descricao=Descrição-7}
+20:41:42,382 DEBUG Printer:113 - bancodados.Produto{preco=603.0, nome=Nome-6, id=6, descricao=Descrição-6}
+20:41:42,382 DEBUG Printer:113 - bancodados.Produto{preco=502.5, nome=Nome-5, id=5, descricao=Descrição-5}
+20:41:42,382 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,382 DEBUG Printer:113 - bancodados.Produto{preco=1105.5, nome=Nome-11, id=11, descricao=Descrição-11}
+20:41:42,382 DEBUG Printer:113 - bancodados.Produto{preco=1005.0, nome=Nome-10, id=10, descricao=Descrição-10}
+20:41:42,382 DEBUG Printer:113 - bancodados.Produto{preco=904.5, nome=Nome-9, id=9, descricao=Descrição-9}
+20:41:42,383 DEBUG Printer:113 - bancodados.Produto{preco=804.0, nome=Nome-8, id=8, descricao=Descrição-8}
+20:41:42,383 DEBUG Printer:113 - bancodados.Produto{preco=1507.5, nome=Nome-15, id=15, descricao=Descrição-15}
+20:41:42,383 DEBUG Printer:113 - bancodados.Produto{preco=1407.0, nome=Nome-14, id=14, descricao=Descrição-14}
+20:41:42,383 DEBUG Printer:113 - bancodados.Produto{preco=1306.5, nome=Nome-13, id=13, descricao=Descrição-13}
+20:41:42,383 DEBUG Printer:113 - bancodados.Produto{preco=1206.0, nome=Nome-12, id=12, descricao=Descrição-12}
+20:41:42,383 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,383 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,383 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,384 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,385 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,385 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,385 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,386 DEBUG JDBCTransaction:82 - begin
+20:41:42,386 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,386 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,386 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,386 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,386 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[17]]
+20:41:42,387 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,387 DEBUG AbstractSaveEventListener:135 - generated identifier: 17, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,387 DEBUG JDBCTransaction:134 - commit
+20:41:42,387 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,387 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,388 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 17 objects
+20:41:42,388 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,388 DEBUG Printer:106 - listing entities:
+20:41:42,388 DEBUG Printer:113 - bancodados.Produto{preco=1708.5, nome=Nome-17, id=17, descricao=Descrição-17}
+20:41:42,388 DEBUG Printer:113 - bancodados.Produto{preco=1608.0, nome=Nome-16, id=16, descricao=Descrição-16}
+20:41:42,388 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,388 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,389 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,389 DEBUG Printer:113 - bancodados.Produto{preco=703.5, nome=Nome-7, id=7, descricao=Descrição-7}
+20:41:42,389 DEBUG Printer:113 - bancodados.Produto{preco=603.0, nome=Nome-6, id=6, descricao=Descrição-6}
+20:41:42,389 DEBUG Printer:113 - bancodados.Produto{preco=502.5, nome=Nome-5, id=5, descricao=Descrição-5}
+20:41:42,389 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,389 DEBUG Printer:113 - bancodados.Produto{preco=1105.5, nome=Nome-11, id=11, descricao=Descrição-11}
+20:41:42,389 DEBUG Printer:113 - bancodados.Produto{preco=1005.0, nome=Nome-10, id=10, descricao=Descrição-10}
+20:41:42,389 DEBUG Printer:113 - bancodados.Produto{preco=904.5, nome=Nome-9, id=9, descricao=Descrição-9}
+20:41:42,389 DEBUG Printer:113 - bancodados.Produto{preco=804.0, nome=Nome-8, id=8, descricao=Descrição-8}
+20:41:42,389 DEBUG Printer:113 - bancodados.Produto{preco=1507.5, nome=Nome-15, id=15, descricao=Descrição-15}
+20:41:42,389 DEBUG Printer:113 - bancodados.Produto{preco=1407.0, nome=Nome-14, id=14, descricao=Descrição-14}
+20:41:42,389 DEBUG Printer:113 - bancodados.Produto{preco=1306.5, nome=Nome-13, id=13, descricao=Descrição-13}
+20:41:42,389 DEBUG Printer:113 - bancodados.Produto{preco=1206.0, nome=Nome-12, id=12, descricao=Descrição-12}
+20:41:42,390 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,390 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,390 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,391 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,392 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,392 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,392 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,392 DEBUG JDBCTransaction:82 - begin
+20:41:42,392 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,392 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,392 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,393 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,401 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[18]]
+20:41:42,401 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,401 DEBUG AbstractSaveEventListener:135 - generated identifier: 18, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,402 DEBUG JDBCTransaction:134 - commit
+20:41:42,402 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,402 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,403 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 18 objects
+20:41:42,403 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,403 DEBUG Printer:106 - listing entities:
+20:41:42,403 DEBUG Printer:113 - bancodados.Produto{preco=1809.0, nome=Nome-18, id=18, descricao=Descrição-18}
+20:41:42,404 DEBUG Printer:113 - bancodados.Produto{preco=1708.5, nome=Nome-17, id=17, descricao=Descrição-17}
+20:41:42,404 DEBUG Printer:113 - bancodados.Produto{preco=1608.0, nome=Nome-16, id=16, descricao=Descrição-16}
+20:41:42,404 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,404 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,404 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,405 DEBUG Printer:113 - bancodados.Produto{preco=703.5, nome=Nome-7, id=7, descricao=Descrição-7}
+20:41:42,405 DEBUG Printer:113 - bancodados.Produto{preco=603.0, nome=Nome-6, id=6, descricao=Descrição-6}
+20:41:42,405 DEBUG Printer:113 - bancodados.Produto{preco=502.5, nome=Nome-5, id=5, descricao=Descrição-5}
+20:41:42,405 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,405 DEBUG Printer:113 - bancodados.Produto{preco=1105.5, nome=Nome-11, id=11, descricao=Descrição-11}
+20:41:42,405 DEBUG Printer:113 - bancodados.Produto{preco=1005.0, nome=Nome-10, id=10, descricao=Descrição-10}
+20:41:42,405 DEBUG Printer:113 - bancodados.Produto{preco=904.5, nome=Nome-9, id=9, descricao=Descrição-9}
+20:41:42,406 DEBUG Printer:113 - bancodados.Produto{preco=804.0, nome=Nome-8, id=8, descricao=Descrição-8}
+20:41:42,406 DEBUG Printer:113 - bancodados.Produto{preco=1507.5, nome=Nome-15, id=15, descricao=Descrição-15}
+20:41:42,406 DEBUG Printer:113 - bancodados.Produto{preco=1407.0, nome=Nome-14, id=14, descricao=Descrição-14}
+20:41:42,406 DEBUG Printer:113 - bancodados.Produto{preco=1306.5, nome=Nome-13, id=13, descricao=Descrição-13}
+20:41:42,406 DEBUG Printer:113 - bancodados.Produto{preco=1206.0, nome=Nome-12, id=12, descricao=Descrição-12}
+20:41:42,406 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,406 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,407 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,407 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,408 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,408 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,408 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+20:41:42,408 DEBUG JDBCTransaction:82 - begin
+20:41:42,408 DEBUG ConnectionManager:444 - opening JDBC connection
+20:41:42,409 DEBUG JDBCTransaction:87 - current autocommit status: false
+20:41:42,409 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,409 DEBUG SQL:111 - 
+    select
+        nextval ('hibernate_sequence')
+20:41:42,409 DEBUG SequenceGenerator:114 - Sequence identifier generated: BasicHolder[java.lang.Long[19]]
+20:41:42,409 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,410 DEBUG AbstractSaveEventListener:135 - generated identifier: 19, using strategy: org.hibernate.id.SequenceGenerator
+20:41:42,410 DEBUG JDBCTransaction:134 - commit
+20:41:42,410 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+20:41:42,410 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+20:41:42,410 DEBUG AbstractFlushingEventListener:108 - Flushed: 1 insertions, 0 updates, 0 deletions to 19 objects
+20:41:42,411 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+20:41:42,411 DEBUG Printer:106 - listing entities:
+20:41:42,411 DEBUG Printer:113 - bancodados.Produto{preco=1909.5, nome=Nome-19, id=19, descricao=Descrição-19}
+20:41:42,411 DEBUG Printer:113 - bancodados.Produto{preco=1809.0, nome=Nome-18, id=18, descricao=Descrição-18}
+20:41:42,411 DEBUG Printer:113 - bancodados.Produto{preco=1708.5, nome=Nome-17, id=17, descricao=Descrição-17}
+20:41:42,411 DEBUG Printer:113 - bancodados.Produto{preco=1608.0, nome=Nome-16, id=16, descricao=Descrição-16}
+20:41:42,411 DEBUG Printer:113 - bancodados.Produto{preco=301.5, nome=Nome-3, id=3, descricao=Descrição-3}
+20:41:42,411 DEBUG Printer:113 - bancodados.Produto{preco=201.0, nome=Nome-2, id=2, descricao=Descrição-2}
+20:41:42,411 DEBUG Printer:113 - bancodados.Produto{preco=100.5, nome=Nome-1, id=1, descricao=Descrição-1}
+20:41:42,411 DEBUG Printer:113 - bancodados.Produto{preco=703.5, nome=Nome-7, id=7, descricao=Descrição-7}
+20:41:42,411 DEBUG Printer:113 - bancodados.Produto{preco=603.0, nome=Nome-6, id=6, descricao=Descrição-6}
+20:41:42,411 DEBUG Printer:113 - bancodados.Produto{preco=502.5, nome=Nome-5, id=5, descricao=Descrição-5}
+20:41:42,411 DEBUG Printer:113 - bancodados.Produto{preco=402.0, nome=Nome-4, id=4, descricao=Descrição-4}
+20:41:42,411 DEBUG Printer:113 - bancodados.Produto{preco=1105.5, nome=Nome-11, id=11, descricao=Descrição-11}
+20:41:42,412 DEBUG Printer:113 - bancodados.Produto{preco=1005.0, nome=Nome-10, id=10, descricao=Descrição-10}
+20:41:42,412 DEBUG Printer:113 - bancodados.Produto{preco=904.5, nome=Nome-9, id=9, descricao=Descrição-9}
+20:41:42,412 DEBUG Printer:113 - bancodados.Produto{preco=804.0, nome=Nome-8, id=8, descricao=Descrição-8}
+20:41:42,412 DEBUG Printer:113 - bancodados.Produto{preco=1507.5, nome=Nome-15, id=15, descricao=Descrição-15}
+20:41:42,412 DEBUG Printer:113 - bancodados.Produto{preco=1407.0, nome=Nome-14, id=14, descricao=Descrição-14}
+20:41:42,412 DEBUG Printer:113 - bancodados.Produto{preco=1306.5, nome=Nome-13, id=13, descricao=Descrição-13}
+20:41:42,412 DEBUG Printer:113 - bancodados.Produto{preco=1206.0, nome=Nome-12, id=12, descricao=Descrição-12}
+20:41:42,412 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+20:41:42,412 DEBUG SQL:111 - 
+    insert 
+    into
+        Produto
+        (descricao, nome, preco, id) 
+    values
+        (?, ?, ?, ?)
+20:41:42,413 DEBUG AbstractBatcher:66 - Executing batch size: 1
+20:41:42,413 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+20:41:42,416 DEBUG JDBCTransaction:147 - committed JDBC Connection
+20:41:42,416 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+20:41:42,416 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+19:25:43,874  INFO Version:43 - Hibernate Annotations 3.5.0-Final
+19:25:43,909  INFO Environment:564 - Hibernate 3.5.0-Final
+19:25:43,915  INFO Environment:582 - loaded properties from resource hibernate.properties: {hibernate.connection.username=postgres, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.show_sql=true, hibernate.connection.url=jdbc:postgresql://localhost/banco_java_desktop, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true}
+19:25:43,921  INFO Environment:775 - Bytecode provider name : javassist
+19:25:43,930  INFO Environment:656 - using JDK 1.4 java.sql.Timestamp handling
+19:25:44,051 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [uuid] -> [class org.hibernate.id.UUIDHexGenerator]
+19:25:44,057 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [hilo] -> [class org.hibernate.id.TableHiLoGenerator]
+19:25:44,063 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [assigned] -> [class org.hibernate.id.Assigned]
+19:25:44,077 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [identity] -> [class org.hibernate.id.IdentityGenerator]
+19:25:44,078 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [select] -> [class org.hibernate.id.SelectGenerator]
+19:25:44,080 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [sequence] -> [class org.hibernate.id.SequenceGenerator]
+19:25:44,086 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [seqhilo] -> [class org.hibernate.id.SequenceHiLoGenerator]
+19:25:44,088 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [increment] -> [class org.hibernate.id.IncrementGenerator]
+19:25:44,094 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [foreign] -> [class org.hibernate.id.ForeignGenerator]
+19:25:44,098 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [guid] -> [class org.hibernate.id.GUIDGenerator]
+19:25:44,099 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [uuid.hex] -> [class org.hibernate.id.UUIDHexGenerator]
+19:25:44,113 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [sequence-identity] -> [class org.hibernate.id.SequenceIdentityGenerator]
+19:25:44,123 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [class org.hibernate.id.enhanced.SequenceStyleGenerator]
+19:25:44,130 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [enhanced-table] -> [class org.hibernate.id.enhanced.TableGenerator]
+19:25:44,153  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+19:25:44,199 DEBUG AnnotationConfiguration:973 - Legacy Validator not present in classpath, ignoring event listener registration
+19:25:44,203 DEBUG HibernateSearchEventListenerRegister:231 - Search not present in classpath, ignoring event listener registration.
+19:25:44,204  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+19:25:44,204 DEBUG Configuration:1376 - Preparing to build session factory with filters : {}
+19:25:44,204 DEBUG AnnotationConfiguration:318 - Execute first pass mapping processing
+19:25:44,286 DEBUG AnnotationConfiguration:617 - Process hbm files
+19:25:44,286 DEBUG AnnotationConfiguration:625 - Process annotated classes
+19:25:44,293  INFO AnnotationBinder:522 - Binding entity from annotated class: bancodados.Produto
+19:25:44,315 DEBUG Ejb3Column:187 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+19:25:44,318 DEBUG AnnotationBinder:977 - no value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+19:25:44,333 DEBUG EntityBinder:338 - Import with entity name Produto
+19:25:44,338  INFO EntityBinder:501 - Bind entity bancodados.Produto on table Produto
+19:25:44,390 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=id, insertable=true, updatable=true, unique=false}
+19:25:44,395 DEBUG PropertyBinder:175 - binding property id with lazy=false
+19:25:44,400 DEBUG SimpleValueBinder:294 - building SimpleValue for id
+19:25:44,402 DEBUG PropertyBinder:254 - Building property id
+19:25:44,409 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=descricao, insertable=true, updatable=true, unique=false}
+19:25:44,410 DEBUG PropertyBinder:175 - binding property descricao with lazy=false
+19:25:44,410 DEBUG SimpleValueBinder:294 - building SimpleValue for descricao
+19:25:44,410 DEBUG PropertyBinder:254 - Building property descricao
+19:25:44,411 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=nome, insertable=true, updatable=true, unique=false}
+19:25:44,411 DEBUG PropertyBinder:175 - binding property nome with lazy=false
+19:25:44,412 DEBUG SimpleValueBinder:294 - building SimpleValue for nome
+19:25:44,412 DEBUG PropertyBinder:254 - Building property nome
+19:25:44,414 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=preco, insertable=true, updatable=true, unique=false}
+19:25:44,415 DEBUG PropertyBinder:175 - binding property preco with lazy=false
+19:25:44,415 DEBUG SimpleValueBinder:294 - building SimpleValue for preco
+19:25:44,415 DEBUG PropertyBinder:254 - Building property preco
+19:25:44,422 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for id
+19:25:44,422 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for descricao
+19:25:44,422 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for nome
+19:25:44,423 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for preco
+19:25:44,424 DEBUG AnnotationConfiguration:486 - processing fk mappings (*ToOne and JoinedSubclass)
+19:25:44,425 DEBUG Configuration:1211 - processing extends queue
+19:25:44,425 DEBUG Configuration:1215 - processing collection mappings
+19:25:44,426 DEBUG Configuration:1226 - processing native query and ResultSetMapping mappings
+19:25:44,426 DEBUG Configuration:1234 - processing association property references
+19:25:44,426 DEBUG Configuration:1256 - processing foreign key constraints
+19:25:44,427  INFO AnnotationConfiguration:450 - Hibernate Validator not found: ignoring
+19:25:44,498  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+19:25:44,498  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+19:25:44,498  INFO DriverManagerConnectionProvider:68 - autocommit mode: false
+19:25:44,516  INFO DriverManagerConnectionProvider:103 - using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost/banco_java_desktop
+19:25:44,516  INFO DriverManagerConnectionProvider:106 - connection properties: {user=postgres, password=q6g18368q}
+19:25:44,517 DEBUG DriverManagerConnectionProvider:132 - opening new JDBC connection
+19:25:44,712 DEBUG DriverManagerConnectionProvider:138 - created connection to: jdbc:postgresql://localhost/banco_java_desktop, Isolation Level: 2
+19:25:44,718  INFO SettingsFactory:117 - RDBMS: PostgreSQL, version: 9.5.6
+19:25:44,720  INFO SettingsFactory:118 - JDBC driver: PostgreSQL JDBC Driver, version: 42.0.0
+19:25:44,754  INFO Dialect:222 - Using dialect: org.hibernate.dialect.PostgreSQLDialect
+19:25:44,772  INFO JdbcSupportLoader:108 - Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+19:25:44,783  INFO TransactionFactoryFactory:59 - Using default transaction strategy (direct JDBC transactions)
+19:25:44,785  INFO TransactionManagerLookupFactory:80 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:25:44,785  INFO SettingsFactory:169 - Automatic flush during beforeCompletion(): disabled
+19:25:44,785  INFO SettingsFactory:173 - Automatic session close at end of transaction: disabled
+19:25:44,786  INFO SettingsFactory:180 - JDBC batch size: 15
+19:25:44,786  INFO SettingsFactory:183 - JDBC batch updates for versioned data: disabled
+19:25:44,787  INFO SettingsFactory:188 - Scrollable result sets: enabled
+19:25:44,787 DEBUG SettingsFactory:192 - Wrap result sets: disabled
+19:25:44,787  INFO SettingsFactory:196 - JDBC3 getGeneratedKeys(): enabled
+19:25:44,788  INFO SettingsFactory:204 - Connection release mode: auto
+19:25:44,788  INFO SettingsFactory:231 - Default batch fetch size: 1
+19:25:44,788  INFO SettingsFactory:235 - Generate SQL with comments: disabled
+19:25:44,789  INFO SettingsFactory:239 - Order SQL updates by primary key: disabled
+19:25:44,790  INFO SettingsFactory:243 - Order SQL inserts for batching: disabled
+19:25:44,791  INFO SettingsFactory:410 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:25:44,793  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+19:25:44,793  INFO SettingsFactory:251 - Query language substitutions: {}
+19:25:44,793  INFO SettingsFactory:256 - JPA-QL strict compliance: disabled
+19:25:44,794  INFO SettingsFactory:261 - Second-level cache: enabled
+19:25:44,794  INFO SettingsFactory:265 - Query cache: disabled
+19:25:44,794  INFO SettingsFactory:395 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+19:25:44,794  INFO SettingsFactory:275 - Optimize cache for minimal puts: disabled
+19:25:44,794  INFO SettingsFactory:284 - Structured second-level cache entries: disabled
+19:25:44,809  INFO SettingsFactory:304 - Echoing all SQL to stdout
+19:25:44,810  INFO SettingsFactory:313 - Statistics: disabled
+19:25:44,810  INFO SettingsFactory:317 - Deleted entity synthetic identifier rollback: disabled
+19:25:44,810  INFO SettingsFactory:332 - Default entity-mode: pojo
+19:25:44,811  INFO SettingsFactory:336 - Named query checking : enabled
+19:25:44,811  INFO SettingsFactory:340 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+19:25:44,851  INFO SessionFactoryImpl:199 - building session factory
+19:25:44,856 DEBUG SessionFactoryImpl:238 - Session factory constructed with filter configurations : {}
+19:25:44,856 DEBUG SessionFactoryImpl:242 - instantiating session factory with properties: {java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.password=q6g18368q, sun.boot.library.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64, java.vm.version=25.131-b11, hibernate.connection.username=postgres, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=OpenJDK 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=BR, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/diego/NetBeansProjects/Desktop/hibernate, java.runtime.version=1.8.0_131-8u131-b11-0ubuntu1.16.04.2-b11, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.endorsed.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed, os.arch=amd64, java.io.tmpdir=/tmp, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/lib/jvm/default-java/jre/lib/amd64:/usr/lib/jvm/default-java/jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=4.8.0-53-generic, user.home=/home/diego, user.timezone=America/Sao_Paulo, java.awt.printerjob=sun.print.PSPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, hibernate.format_sql=true, hibernate.connection.driver_class=org.postgresql.Driver, user.name=diego, java.class.path=/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/antlr-2.7.6.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/c3p0-0.9.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/commons-collections-3.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/dom4j-1.6.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/ehcache-1.5.0.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/hibernate-jpa-2.0-api-1.0.0.Final.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/hibernate-jpamodelgen-1.0.0.Final.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/hibernate3.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/javassist-3.9.0.GA.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/jta-1.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/log4j-1.2.15.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/mysql-connector-java-5.0.7-bin.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/slf4j-api-1.5.8.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/slf4j-log4j12-1.5.8.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/postgresql-42.0.0.jar:/home/diego/NetBeansProjects/Desktop/hibernate/build/classes, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre, sun.java.command=bancodados.ExProdutoDAO, hibernate.connection.url=jdbc:postgresql://localhost/banco_java_desktop, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, java.specification.vendor=Oracle Corporation, user.language=pt, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.8.0_131, java.ext.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes, java.vendor=Oracle Corporation, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=gnome, sun.cpu.isalist=}
+19:25:44,857 DEBUG DefaultIdentifierGeneratorFactory:89 - Setting dialect [org.hibernate.dialect.PostgreSQLDialect]
+19:25:44,982 DEBUG AbstractEntityPersister:2936 - Static SQL for entity: bancodados.Produto
+19:25:44,982 DEBUG AbstractEntityPersister:2941 -  Version select: select id from Produto where id =?
+19:25:44,982 DEBUG AbstractEntityPersister:2944 -  Snapshot select: select produto_.id, produto_.descricao as descricao0_, produto_.nome as nome0_, produto_.preco as preco0_ from Produto produto_ where produto_.id=?
+19:25:44,982 DEBUG AbstractEntityPersister:2947 -  Insert 0: insert into Produto (descricao, nome, preco, id) values (?, ?, ?, ?)
+19:25:44,982 DEBUG AbstractEntityPersister:2948 -  Update 0: update Produto set descricao=?, nome=?, preco=? where id=?
+19:25:44,982 DEBUG AbstractEntityPersister:2949 -  Delete 0: delete from Produto where id=?
+19:25:44,995 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [NONE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+19:25:44,996 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [READ]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+19:25:44,996 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [UPGRADE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+19:25:44,996 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [UPGRADE_NOWAIT]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+19:25:44,996 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [FORCE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+19:25:44,997 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [PESSIMISTIC_READ]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for share
+19:25:44,997 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [PESSIMISTIC_WRITE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+19:25:44,997 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [PESSIMISTIC_FORCE_INCREMENT]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+19:25:45,001 DEBUG EntityLoader:56 - Static select for action ACTION_MERGE on entity bancodados.Produto: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+19:25:45,001 DEBUG EntityLoader:56 - Static select for action ACTION_REFRESH on entity bancodados.Produto: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+19:25:45,004 DEBUG SessionFactoryObjectFactory:62 - initializing class SessionFactoryObjectFactory
+19:25:45,005 DEBUG SessionFactoryObjectFactory:99 - registered: ff8081815c5b76fe015c5b77022a0000 (unnamed)
+19:25:45,005  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+19:25:45,005 DEBUG SessionFactoryImpl:378 - instantiated session factory
+19:25:45,005 DEBUG SessionFactoryImpl:547 - Checking 0 named HQL queries
+19:25:45,005 DEBUG SessionFactoryImpl:567 - Checking 0 named SQL queries
+19:25:45,027 DEBUG SessionImpl:257 - opened session at timestamp: 14961831450
+19:45:19,331  INFO Version:43 - Hibernate Annotations 3.5.0-Final
+19:45:19,351  INFO Environment:564 - Hibernate 3.5.0-Final
+19:45:19,355  INFO Environment:582 - loaded properties from resource hibernate.properties: {hibernate.connection.username=postgres, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.show_sql=true, hibernate.connection.url=jdbc:postgresql://localhost/banco_java_desktop, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true}
+19:45:19,359  INFO Environment:775 - Bytecode provider name : javassist
+19:45:19,363  INFO Environment:656 - using JDK 1.4 java.sql.Timestamp handling
+19:45:19,439 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [uuid] -> [class org.hibernate.id.UUIDHexGenerator]
+19:45:19,443 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [hilo] -> [class org.hibernate.id.TableHiLoGenerator]
+19:45:19,444 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [assigned] -> [class org.hibernate.id.Assigned]
+19:45:19,446 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [identity] -> [class org.hibernate.id.IdentityGenerator]
+19:45:19,458 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [select] -> [class org.hibernate.id.SelectGenerator]
+19:45:19,460 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [sequence] -> [class org.hibernate.id.SequenceGenerator]
+19:45:19,461 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [seqhilo] -> [class org.hibernate.id.SequenceHiLoGenerator]
+19:45:19,463 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [increment] -> [class org.hibernate.id.IncrementGenerator]
+19:45:19,464 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [foreign] -> [class org.hibernate.id.ForeignGenerator]
+19:45:19,466 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [guid] -> [class org.hibernate.id.GUIDGenerator]
+19:45:19,466 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [uuid.hex] -> [class org.hibernate.id.UUIDHexGenerator]
+19:45:19,467 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [sequence-identity] -> [class org.hibernate.id.SequenceIdentityGenerator]
+19:45:19,470 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [class org.hibernate.id.enhanced.SequenceStyleGenerator]
+19:45:19,475 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [enhanced-table] -> [class org.hibernate.id.enhanced.TableGenerator]
+19:45:19,485  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+19:45:19,508 DEBUG AnnotationConfiguration:973 - Legacy Validator not present in classpath, ignoring event listener registration
+19:45:19,513 DEBUG HibernateSearchEventListenerRegister:231 - Search not present in classpath, ignoring event listener registration.
+19:45:19,514  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+19:45:19,514 DEBUG Configuration:1376 - Preparing to build session factory with filters : {}
+19:45:19,515 DEBUG AnnotationConfiguration:318 - Execute first pass mapping processing
+19:45:19,568 DEBUG AnnotationConfiguration:617 - Process hbm files
+19:45:19,568 DEBUG AnnotationConfiguration:625 - Process annotated classes
+19:45:19,572  INFO AnnotationBinder:522 - Binding entity from annotated class: bancodados.Produto
+19:45:19,588 DEBUG Ejb3Column:187 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+19:45:19,590 DEBUG AnnotationBinder:977 - no value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+19:45:19,603 DEBUG EntityBinder:338 - Import with entity name Produto
+19:45:19,606  INFO EntityBinder:501 - Bind entity bancodados.Produto on table Produto
+19:45:19,633 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=id, insertable=true, updatable=true, unique=false}
+19:45:19,638 DEBUG PropertyBinder:175 - binding property id with lazy=false
+19:45:19,639 DEBUG SimpleValueBinder:294 - building SimpleValue for id
+19:45:19,641 DEBUG PropertyBinder:254 - Building property id
+19:45:19,644 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=descricao, insertable=true, updatable=true, unique=false}
+19:45:19,645 DEBUG PropertyBinder:175 - binding property descricao with lazy=false
+19:45:19,645 DEBUG SimpleValueBinder:294 - building SimpleValue for descricao
+19:45:19,645 DEBUG PropertyBinder:254 - Building property descricao
+19:45:19,645 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=nome, insertable=true, updatable=true, unique=false}
+19:45:19,646 DEBUG PropertyBinder:175 - binding property nome with lazy=false
+19:45:19,646 DEBUG SimpleValueBinder:294 - building SimpleValue for nome
+19:45:19,646 DEBUG PropertyBinder:254 - Building property nome
+19:45:19,646 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=preco, insertable=true, updatable=true, unique=false}
+19:45:19,647 DEBUG PropertyBinder:175 - binding property preco with lazy=false
+19:45:19,647 DEBUG SimpleValueBinder:294 - building SimpleValue for preco
+19:45:19,647 DEBUG PropertyBinder:254 - Building property preco
+19:45:19,648 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for id
+19:45:19,648 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for descricao
+19:45:19,649 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for nome
+19:45:19,649 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for preco
+19:45:19,649 DEBUG AnnotationConfiguration:486 - processing fk mappings (*ToOne and JoinedSubclass)
+19:45:19,650 DEBUG Configuration:1211 - processing extends queue
+19:45:19,651 DEBUG Configuration:1215 - processing collection mappings
+19:45:19,651 DEBUG Configuration:1226 - processing native query and ResultSetMapping mappings
+19:45:19,651 DEBUG Configuration:1234 - processing association property references
+19:45:19,651 DEBUG Configuration:1256 - processing foreign key constraints
+19:45:19,652  INFO AnnotationConfiguration:450 - Hibernate Validator not found: ignoring
+19:45:19,688  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+19:45:19,689  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+19:45:19,689  INFO DriverManagerConnectionProvider:68 - autocommit mode: false
+19:45:19,705  INFO DriverManagerConnectionProvider:103 - using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost/banco_java_desktop
+19:45:19,705  INFO DriverManagerConnectionProvider:106 - connection properties: {user=postgres, password=q6g18368q}
+19:45:19,705 DEBUG DriverManagerConnectionProvider:132 - opening new JDBC connection
+19:45:19,831 DEBUG DriverManagerConnectionProvider:138 - created connection to: jdbc:postgresql://localhost/banco_java_desktop, Isolation Level: 2
+19:45:19,835  INFO SettingsFactory:117 - RDBMS: PostgreSQL, version: 9.5.6
+19:45:19,835  INFO SettingsFactory:118 - JDBC driver: PostgreSQL JDBC Driver, version: 42.0.0
+19:45:19,849  INFO Dialect:222 - Using dialect: org.hibernate.dialect.PostgreSQLDialect
+19:45:19,866  INFO JdbcSupportLoader:108 - Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+19:45:19,867  INFO TransactionFactoryFactory:59 - Using default transaction strategy (direct JDBC transactions)
+19:45:19,868  INFO TransactionManagerLookupFactory:80 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:45:19,868  INFO SettingsFactory:169 - Automatic flush during beforeCompletion(): disabled
+19:45:19,868  INFO SettingsFactory:173 - Automatic session close at end of transaction: disabled
+19:45:19,869  INFO SettingsFactory:180 - JDBC batch size: 15
+19:45:19,869  INFO SettingsFactory:183 - JDBC batch updates for versioned data: disabled
+19:45:19,869  INFO SettingsFactory:188 - Scrollable result sets: enabled
+19:45:19,869 DEBUG SettingsFactory:192 - Wrap result sets: disabled
+19:45:19,870  INFO SettingsFactory:196 - JDBC3 getGeneratedKeys(): enabled
+19:45:19,870  INFO SettingsFactory:204 - Connection release mode: auto
+19:45:19,870  INFO SettingsFactory:231 - Default batch fetch size: 1
+19:45:19,870  INFO SettingsFactory:235 - Generate SQL with comments: disabled
+19:45:19,871  INFO SettingsFactory:239 - Order SQL updates by primary key: disabled
+19:45:19,871  INFO SettingsFactory:243 - Order SQL inserts for batching: disabled
+19:45:19,871  INFO SettingsFactory:410 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:45:19,872  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+19:45:19,872  INFO SettingsFactory:251 - Query language substitutions: {}
+19:45:19,872  INFO SettingsFactory:256 - JPA-QL strict compliance: disabled
+19:45:19,872  INFO SettingsFactory:261 - Second-level cache: enabled
+19:45:19,873  INFO SettingsFactory:265 - Query cache: disabled
+19:45:19,873  INFO SettingsFactory:395 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+19:45:19,873  INFO SettingsFactory:275 - Optimize cache for minimal puts: disabled
+19:45:19,873  INFO SettingsFactory:284 - Structured second-level cache entries: disabled
+19:45:19,875  INFO SettingsFactory:304 - Echoing all SQL to stdout
+19:45:19,876  INFO SettingsFactory:313 - Statistics: disabled
+19:45:19,876  INFO SettingsFactory:317 - Deleted entity synthetic identifier rollback: disabled
+19:45:19,876  INFO SettingsFactory:332 - Default entity-mode: pojo
+19:45:19,876  INFO SettingsFactory:336 - Named query checking : enabled
+19:45:19,876  INFO SettingsFactory:340 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+19:45:19,908  INFO SessionFactoryImpl:199 - building session factory
+19:45:19,911 DEBUG SessionFactoryImpl:238 - Session factory constructed with filter configurations : {}
+19:45:19,911 DEBUG SessionFactoryImpl:242 - instantiating session factory with properties: {java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.password=q6g18368q, sun.boot.library.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64, java.vm.version=25.131-b11, hibernate.connection.username=postgres, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=OpenJDK 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=BR, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/diego/NetBeansProjects/Desktop/hibernate, java.runtime.version=1.8.0_131-8u131-b11-0ubuntu1.16.04.2-b11, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.endorsed.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed, os.arch=amd64, java.io.tmpdir=/tmp, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/lib/jvm/default-java/jre/lib/amd64:/usr/lib/jvm/default-java/jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=4.8.0-53-generic, user.home=/home/diego, user.timezone=America/Sao_Paulo, java.awt.printerjob=sun.print.PSPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, hibernate.format_sql=true, hibernate.connection.driver_class=org.postgresql.Driver, user.name=diego, java.class.path=/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/antlr-2.7.6.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/c3p0-0.9.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/commons-collections-3.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/dom4j-1.6.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/ehcache-1.5.0.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/hibernate-jpa-2.0-api-1.0.0.Final.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/hibernate-jpamodelgen-1.0.0.Final.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/hibernate3.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/javassist-3.9.0.GA.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/jta-1.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/log4j-1.2.15.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/mysql-connector-java-5.0.7-bin.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/slf4j-api-1.5.8.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/slf4j-log4j12-1.5.8.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/postgresql-42.0.0.jar:/home/diego/NetBeansProjects/Desktop/hibernate/build/classes, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre, sun.java.command=bancodados.TestaBuscas, hibernate.connection.url=jdbc:postgresql://localhost/banco_java_desktop, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, java.specification.vendor=Oracle Corporation, user.language=pt, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.8.0_131, java.ext.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes, java.vendor=Oracle Corporation, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=gnome, sun.cpu.isalist=}
+19:45:19,912 DEBUG DefaultIdentifierGeneratorFactory:89 - Setting dialect [org.hibernate.dialect.PostgreSQLDialect]
+19:45:19,992 DEBUG AbstractEntityPersister:2936 - Static SQL for entity: bancodados.Produto
+19:45:19,992 DEBUG AbstractEntityPersister:2941 -  Version select: select id from Produto where id =?
+19:45:19,993 DEBUG AbstractEntityPersister:2944 -  Snapshot select: select produto_.id, produto_.descricao as descricao0_, produto_.nome as nome0_, produto_.preco as preco0_ from Produto produto_ where produto_.id=?
+19:45:19,993 DEBUG AbstractEntityPersister:2947 -  Insert 0: insert into Produto (descricao, nome, preco, id) values (?, ?, ?, ?)
+19:45:19,993 DEBUG AbstractEntityPersister:2948 -  Update 0: update Produto set descricao=?, nome=?, preco=? where id=?
+19:45:19,993 DEBUG AbstractEntityPersister:2949 -  Delete 0: delete from Produto where id=?
+19:45:20,006 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [NONE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+19:45:20,006 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [READ]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+19:45:20,007 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [UPGRADE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+19:45:20,007 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [UPGRADE_NOWAIT]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+19:45:20,007 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [FORCE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+19:45:20,008 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [PESSIMISTIC_READ]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for share
+19:45:20,008 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [PESSIMISTIC_WRITE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+19:45:20,009 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [PESSIMISTIC_FORCE_INCREMENT]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+19:45:20,014 DEBUG EntityLoader:56 - Static select for action ACTION_MERGE on entity bancodados.Produto: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+19:45:20,014 DEBUG EntityLoader:56 - Static select for action ACTION_REFRESH on entity bancodados.Produto: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+19:45:20,017 DEBUG SessionFactoryObjectFactory:62 - initializing class SessionFactoryObjectFactory
+19:45:20,018 DEBUG SessionFactoryObjectFactory:99 - registered: ff8081815c5b88ed015c5b88f0100000 (unnamed)
+19:45:20,019  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+19:45:20,019 DEBUG SessionFactoryImpl:378 - instantiated session factory
+19:45:20,019 DEBUG SessionFactoryImpl:547 - Checking 0 named HQL queries
+19:45:20,019 DEBUG SessionFactoryImpl:567 - Checking 0 named SQL queries
+19:45:20,042 DEBUG SessionImpl:257 - opened session at timestamp: 14961843200
+19:45:20,053 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+19:45:20,053 DEBUG ConnectionManager:444 - opening JDBC connection
+19:45:20,058 DEBUG SQL:111 - 
+    select
+        this_.id as id0_0_,
+        this_.descricao as descricao0_0_,
+        this_.nome as nome0_0_,
+        this_.preco as preco0_0_ 
+    from
+        Produto this_
+19:45:20,066 DEBUG AbstractBatcher:426 - about to open ResultSet (open ResultSets: 0, globally: 0)
+19:45:20,067 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#1]
+19:45:20,071 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#2]
+19:45:20,072 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#3]
+19:45:20,072 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#4]
+19:45:20,072 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#5]
+19:45:20,073 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#6]
+19:45:20,073 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#7]
+19:45:20,073 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#8]
+19:45:20,073 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#9]
+19:45:20,073 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#10]
+19:45:20,074 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#11]
+19:45:20,074 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#12]
+19:45:20,074 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#13]
+19:45:20,074 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#14]
+19:45:20,075 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#15]
+19:45:20,077 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#16]
+19:45:20,078 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#17]
+19:45:20,078 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#18]
+19:45:20,078 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#19]
+19:45:20,078 DEBUG AbstractBatcher:433 - about to close ResultSet (open ResultSets: 1, globally: 1)
+19:45:20,078 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+19:45:20,079 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#1]
+19:45:20,081 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#1]
+19:45:20,081 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#2]
+19:45:20,081 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#2]
+19:45:20,081 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#3]
+19:45:20,081 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#3]
+19:45:20,081 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#4]
+19:45:20,082 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#4]
+19:45:20,082 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#5]
+19:45:20,082 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#5]
+19:45:20,082 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#6]
+19:45:20,082 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#6]
+19:45:20,082 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#7]
+19:45:20,083 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#7]
+19:45:20,083 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#8]
+19:45:20,083 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#8]
+19:45:20,083 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#9]
+19:45:20,083 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#9]
+19:45:20,083 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#10]
+19:45:20,083 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#10]
+19:45:20,084 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#11]
+19:45:20,084 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#11]
+19:45:20,084 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#12]
+19:45:20,084 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#12]
+19:45:20,084 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#13]
+19:45:20,084 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#13]
+19:45:20,084 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#14]
+19:45:20,085 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#14]
+19:45:20,085 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#15]
+19:45:20,085 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#15]
+19:45:20,085 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#16]
+19:45:20,085 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#16]
+19:45:20,085 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#17]
+19:45:20,085 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#17]
+19:45:20,086 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#18]
+19:45:20,086 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#18]
+19:45:20,086 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#19]
+19:45:20,086 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#19]
+19:45:20,086 DEBUG StatefulPersistenceContext:892 - initializing non-lazy collections
+19:45:20,086 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+19:45:20,086 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+19:45:20,088 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+19:45:20,088 DEBUG ConnectionManager:444 - opening JDBC connection
+19:45:20,089 DEBUG SQL:111 - 
+    select
+        this_.id as id0_0_,
+        this_.descricao as descricao0_0_,
+        this_.nome as nome0_0_,
+        this_.preco as preco0_0_ 
+    from
+        Produto this_ limit ? offset ?
+19:45:20,096 DEBUG AbstractBatcher:426 - about to open ResultSet (open ResultSets: 0, globally: 0)
+19:45:20,097 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#4]
+19:45:20,097 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#5]
+19:45:20,098 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#6]
+19:45:20,098 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#7]
+19:45:20,099 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#8]
+19:45:20,099 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#9]
+19:45:20,099 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#10]
+19:45:20,099 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#11]
+19:45:20,100 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#12]
+19:45:20,100 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#13]
+19:45:20,100 DEBUG AbstractBatcher:433 - about to close ResultSet (open ResultSets: 1, globally: 1)
+19:45:20,100 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+19:45:20,100 DEBUG StatefulPersistenceContext:892 - initializing non-lazy collections
+19:45:20,100 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+19:45:20,100 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+19:45:20,142 DEBUG QueryTranslatorImpl:272 - parse() - HQL: from bancodados.Produto where id>18
+19:45:20,148 DEBUG AST:291 - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'from'
+    |     \-[RANGE] Node: 'RANGE'
+    |        \-[DOT] Node: '.'
+    |           +-[IDENT] Node: 'bancodados'
+    |           \-[IDENT] Node: 'Produto'
+    \-[WHERE] Node: 'where'
+       \-[GT] Node: '>'
+          +-[IDENT] Node: 'id'
+          \-[NUM_INT] Node: '18'
+
+19:45:20,149 DEBUG ErrorCounter:91 - throwQueryException() : no errors
+19:45:20,174 DEBUG HqlSqlBaseWalker:111 - select << begin [level=1, statement=select]
+19:45:20,185 DEBUG FromElement:157 - FromClause{level=1} :  bancodados.Produto (no alias) -> produto0_
+19:45:20,187 DEBUG FromReferenceNode:74 - Resolved :  {synthetic-alias} -> {synthetic-alias}
+19:45:20,188 DEBUG DotNode:613 - getDataType() : id -> org.hibernate.type.LongType@57af006c
+19:45:20,189 DEBUG FromReferenceNode:74 - Resolved :  {synthetic-alias}.id -> produto0_.id
+19:45:20,190 DEBUG HqlSqlBaseWalker:117 - select : finishing up [level=1, statement=select]
+19:45:20,190 DEBUG HqlSqlWalker:611 - processQuery() :  ( SELECT ( FromClause{level=1} Produto produto0_ ) ( where ( > ( produto0_.id {synthetic-alias} id ) 18 ) ) )
+19:45:20,193 DEBUG HqlSqlWalker:854 - Derived SELECT clause created.
+19:45:20,196 DEBUG JoinProcessor:179 - Using FROM fragment [Produto produto0_]
+19:45:20,198 DEBUG HqlSqlBaseWalker:123 - select >> end [level=1, statement=select]
+19:45:20,200 DEBUG AST:258 - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Produto)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'produto0_.id as id0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=Produto,tableAlias=produto0_,origin=null,columns={,className=bancodados.Produto}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'produto0_.descricao as descricao0_, produto0_.nome as nome0_, produto0_.preco as preco0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[produto0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'Produto produto0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=Produto,tableAlias=produto0_,origin=null,columns={,className=bancodados.Produto}}
+    \-[WHERE] SqlNode: 'where'
+       \-[GT] BinaryLogicOperatorNode: '>'
+          +-[DOT] DotNode: 'produto0_.id' {propertyName=id,dereferenceType=ALL,propertyPath=id,path={synthetic-alias}.id,tableAlias=produto0_,className=bancodados.Produto,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'id' {originalText=id}
+          \-[NUM_INT] LiteralNode: '18'
+
+19:45:20,200 DEBUG ErrorCounter:91 - throwQueryException() : no errors
+19:45:20,212 DEBUG QueryTranslatorImpl:241 - HQL: from bancodados.Produto where id>18
+19:45:20,212 DEBUG QueryTranslatorImpl:242 - SQL: select produto0_.id as id0_, produto0_.descricao as descricao0_, produto0_.nome as nome0_, produto0_.preco as preco0_ from Produto produto0_ where produto0_.id>18
+19:45:20,212 DEBUG ErrorCounter:91 - throwQueryException() : no errors
+19:45:20,220 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+19:45:20,221 DEBUG ConnectionManager:444 - opening JDBC connection
+19:45:20,221 DEBUG SQL:111 - 
+    select
+        produto0_.id as id0_,
+        produto0_.descricao as descricao0_,
+        produto0_.nome as nome0_,
+        produto0_.preco as preco0_ 
+    from
+        Produto produto0_ 
+    where
+        produto0_.id>18
+19:45:20,225 DEBUG AbstractBatcher:426 - about to open ResultSet (open ResultSets: 0, globally: 0)
+19:45:20,225 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#19]
+19:45:20,226 DEBUG AbstractBatcher:433 - about to close ResultSet (open ResultSets: 1, globally: 1)
+19:45:20,226 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+19:45:20,226 DEBUG StatefulPersistenceContext:892 - initializing non-lazy collections
+19:45:20,227 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+19:45:20,227 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+19:45:20,246 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+19:45:20,246 DEBUG ConnectionManager:444 - opening JDBC connection
+19:45:20,246 DEBUG SQL:111 - 
+    select
+        * 
+    from
+        Produto 
+    order by
+        preco
+19:45:20,253 DEBUG AbstractBatcher:426 - about to open ResultSet (open ResultSets: 0, globally: 0)
+19:45:20,253 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#1]
+19:45:20,253 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#2]
+19:45:20,254 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#3]
+19:45:20,254 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#4]
+19:45:20,254 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#5]
+19:45:20,254 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#6]
+19:45:20,255 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#7]
+19:45:20,255 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#8]
+19:45:20,255 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#9]
+19:45:20,256 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#10]
+19:45:20,256 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#11]
+19:45:20,256 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#12]
+19:45:20,256 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#13]
+19:45:20,257 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#14]
+19:45:20,257 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#15]
+19:45:20,257 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#16]
+19:45:20,257 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#17]
+19:45:20,258 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#18]
+19:45:20,259 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#19]
+19:45:20,259 DEBUG AbstractBatcher:433 - about to close ResultSet (open ResultSets: 1, globally: 1)
+19:45:20,259 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+19:45:20,260 DEBUG StatefulPersistenceContext:892 - initializing non-lazy collections
+19:45:20,260 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+19:45:20,260 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+19:48:43,404  INFO Version:43 - Hibernate Annotations 3.5.0-Final
+19:48:43,417  INFO Environment:564 - Hibernate 3.5.0-Final
+19:48:43,419  INFO Environment:582 - loaded properties from resource hibernate.properties: {hibernate.connection.username=postgres, hibernate.connection.password=****, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.show_sql=true, hibernate.connection.url=jdbc:postgresql://localhost/banco_java_desktop, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true}
+19:48:43,421  INFO Environment:775 - Bytecode provider name : javassist
+19:48:43,425  INFO Environment:656 - using JDK 1.4 java.sql.Timestamp handling
+19:48:43,472 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [uuid] -> [class org.hibernate.id.UUIDHexGenerator]
+19:48:43,475 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [hilo] -> [class org.hibernate.id.TableHiLoGenerator]
+19:48:43,476 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [assigned] -> [class org.hibernate.id.Assigned]
+19:48:43,478 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [identity] -> [class org.hibernate.id.IdentityGenerator]
+19:48:43,479 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [select] -> [class org.hibernate.id.SelectGenerator]
+19:48:43,481 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [sequence] -> [class org.hibernate.id.SequenceGenerator]
+19:48:43,482 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [seqhilo] -> [class org.hibernate.id.SequenceHiLoGenerator]
+19:48:43,484 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [increment] -> [class org.hibernate.id.IncrementGenerator]
+19:48:43,485 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [foreign] -> [class org.hibernate.id.ForeignGenerator]
+19:48:43,486 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [guid] -> [class org.hibernate.id.GUIDGenerator]
+19:48:43,487 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [uuid.hex] -> [class org.hibernate.id.UUIDHexGenerator]
+19:48:43,489 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [sequence-identity] -> [class org.hibernate.id.SequenceIdentityGenerator]
+19:48:43,491 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [class org.hibernate.id.enhanced.SequenceStyleGenerator]
+19:48:43,493 DEBUG DefaultIdentifierGeneratorFactory:99 - Registering IdentifierGenerator strategy [enhanced-table] -> [class org.hibernate.id.enhanced.TableGenerator]
+19:48:43,499  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+19:48:43,513 DEBUG AnnotationConfiguration:973 - Legacy Validator not present in classpath, ignoring event listener registration
+19:48:43,516 DEBUG HibernateSearchEventListenerRegister:231 - Search not present in classpath, ignoring event listener registration.
+19:48:43,516  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+19:48:43,516 DEBUG Configuration:1376 - Preparing to build session factory with filters : {}
+19:48:43,517 DEBUG AnnotationConfiguration:318 - Execute first pass mapping processing
+19:48:43,554 DEBUG AnnotationConfiguration:617 - Process hbm files
+19:48:43,554 DEBUG AnnotationConfiguration:625 - Process annotated classes
+19:48:43,558  INFO AnnotationBinder:522 - Binding entity from annotated class: bancodados.Produto
+19:48:43,572 DEBUG Ejb3Column:187 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+19:48:43,574 DEBUG AnnotationBinder:977 - no value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+19:48:43,586 DEBUG EntityBinder:338 - Import with entity name Produto
+19:48:43,589  INFO EntityBinder:501 - Bind entity bancodados.Produto on table Produto
+19:48:43,612 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=id, insertable=true, updatable=true, unique=false}
+19:48:43,615 DEBUG PropertyBinder:175 - binding property id with lazy=false
+19:48:43,617 DEBUG SimpleValueBinder:294 - building SimpleValue for id
+19:48:43,619 DEBUG PropertyBinder:254 - Building property id
+19:48:43,623 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=descricao, insertable=true, updatable=true, unique=false}
+19:48:43,623 DEBUG PropertyBinder:175 - binding property descricao with lazy=false
+19:48:43,623 DEBUG SimpleValueBinder:294 - building SimpleValue for descricao
+19:48:43,624 DEBUG PropertyBinder:254 - Building property descricao
+19:48:43,624 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=nome, insertable=true, updatable=true, unique=false}
+19:48:43,625 DEBUG PropertyBinder:175 - binding property nome with lazy=false
+19:48:43,625 DEBUG SimpleValueBinder:294 - building SimpleValue for nome
+19:48:43,625 DEBUG PropertyBinder:254 - Building property nome
+19:48:43,625 DEBUG Ejb3Column:187 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Produto), mappingColumn=preco, insertable=true, updatable=true, unique=false}
+19:48:43,626 DEBUG PropertyBinder:175 - binding property preco with lazy=false
+19:48:43,626 DEBUG SimpleValueBinder:294 - building SimpleValue for preco
+19:48:43,626 DEBUG PropertyBinder:254 - Building property preco
+19:48:43,628 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for id
+19:48:43,628 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for descricao
+19:48:43,628 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for nome
+19:48:43,628 DEBUG SimpleValueBinder:330 - setting SimpleValue typeName for preco
+19:48:43,629 DEBUG AnnotationConfiguration:486 - processing fk mappings (*ToOne and JoinedSubclass)
+19:48:43,630 DEBUG Configuration:1211 - processing extends queue
+19:48:43,631 DEBUG Configuration:1215 - processing collection mappings
+19:48:43,631 DEBUG Configuration:1226 - processing native query and ResultSetMapping mappings
+19:48:43,631 DEBUG Configuration:1234 - processing association property references
+19:48:43,631 DEBUG Configuration:1256 - processing foreign key constraints
+19:48:43,631  INFO AnnotationConfiguration:450 - Hibernate Validator not found: ignoring
+19:48:43,665  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+19:48:43,665  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+19:48:43,665  INFO DriverManagerConnectionProvider:68 - autocommit mode: false
+19:48:43,677  INFO DriverManagerConnectionProvider:103 - using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost/banco_java_desktop
+19:48:43,678  INFO DriverManagerConnectionProvider:106 - connection properties: {user=postgres, password=q6g18368q}
+19:48:43,678 DEBUG DriverManagerConnectionProvider:132 - opening new JDBC connection
+19:48:43,784 DEBUG DriverManagerConnectionProvider:138 - created connection to: jdbc:postgresql://localhost/banco_java_desktop, Isolation Level: 2
+19:48:43,787  INFO SettingsFactory:117 - RDBMS: PostgreSQL, version: 9.5.6
+19:48:43,787  INFO SettingsFactory:118 - JDBC driver: PostgreSQL JDBC Driver, version: 42.0.0
+19:48:43,799  INFO Dialect:222 - Using dialect: org.hibernate.dialect.PostgreSQLDialect
+19:48:43,813  INFO JdbcSupportLoader:108 - Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+19:48:43,814  INFO TransactionFactoryFactory:59 - Using default transaction strategy (direct JDBC transactions)
+19:48:43,815  INFO TransactionManagerLookupFactory:80 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:48:43,815  INFO SettingsFactory:169 - Automatic flush during beforeCompletion(): disabled
+19:48:43,815  INFO SettingsFactory:173 - Automatic session close at end of transaction: disabled
+19:48:43,815  INFO SettingsFactory:180 - JDBC batch size: 15
+19:48:43,815  INFO SettingsFactory:183 - JDBC batch updates for versioned data: disabled
+19:48:43,816  INFO SettingsFactory:188 - Scrollable result sets: enabled
+19:48:43,816 DEBUG SettingsFactory:192 - Wrap result sets: disabled
+19:48:43,816  INFO SettingsFactory:196 - JDBC3 getGeneratedKeys(): enabled
+19:48:43,816  INFO SettingsFactory:204 - Connection release mode: auto
+19:48:43,817  INFO SettingsFactory:231 - Default batch fetch size: 1
+19:48:43,817  INFO SettingsFactory:235 - Generate SQL with comments: disabled
+19:48:43,817  INFO SettingsFactory:239 - Order SQL updates by primary key: disabled
+19:48:43,818  INFO SettingsFactory:243 - Order SQL inserts for batching: disabled
+19:48:43,818  INFO SettingsFactory:410 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:48:43,819  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+19:48:43,820  INFO SettingsFactory:251 - Query language substitutions: {}
+19:48:43,820  INFO SettingsFactory:256 - JPA-QL strict compliance: disabled
+19:48:43,820  INFO SettingsFactory:261 - Second-level cache: enabled
+19:48:43,820  INFO SettingsFactory:265 - Query cache: disabled
+19:48:43,820  INFO SettingsFactory:395 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+19:48:43,821  INFO SettingsFactory:275 - Optimize cache for minimal puts: disabled
+19:48:43,821  INFO SettingsFactory:284 - Structured second-level cache entries: disabled
+19:48:43,824  INFO SettingsFactory:304 - Echoing all SQL to stdout
+19:48:43,825  INFO SettingsFactory:313 - Statistics: disabled
+19:48:43,825  INFO SettingsFactory:317 - Deleted entity synthetic identifier rollback: disabled
+19:48:43,825  INFO SettingsFactory:332 - Default entity-mode: pojo
+19:48:43,825  INFO SettingsFactory:336 - Named query checking : enabled
+19:48:43,825  INFO SettingsFactory:340 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+19:48:43,852  INFO SessionFactoryImpl:199 - building session factory
+19:48:43,855 DEBUG SessionFactoryImpl:238 - Session factory constructed with filter configurations : {}
+19:48:43,856 DEBUG SessionFactoryImpl:242 - instantiating session factory with properties: {java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.password=q6g18368q, sun.boot.library.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64, java.vm.version=25.131-b11, hibernate.connection.username=postgres, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=OpenJDK 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=BR, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/diego/NetBeansProjects/Desktop/hibernate, java.runtime.version=1.8.0_131-8u131-b11-0ubuntu1.16.04.2-b11, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.endorsed.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed, os.arch=amd64, java.io.tmpdir=/tmp, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/lib/jvm/default-java/jre/lib/amd64:/usr/lib/jvm/default-java/jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=4.8.0-53-generic, user.home=/home/diego, user.timezone=America/Sao_Paulo, java.awt.printerjob=sun.print.PSPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, hibernate.format_sql=true, hibernate.connection.driver_class=org.postgresql.Driver, user.name=diego, java.class.path=/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/antlr-2.7.6.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/c3p0-0.9.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/commons-collections-3.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/dom4j-1.6.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/ehcache-1.5.0.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/hibernate-jpa-2.0-api-1.0.0.Final.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/hibernate-jpamodelgen-1.0.0.Final.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/hibernate3.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/javassist-3.9.0.GA.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/jta-1.1.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/log4j-1.2.15.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/mysql-connector-java-5.0.7-bin.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/slf4j-api-1.5.8.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/dependencias-hibernate-3.5.0/persistencia/lib/slf4j-log4j12-1.5.8.jar:/home/diego/NetBeansProjects/Desktop/hibernate/lib/postgresql-42.0.0.jar:/home/diego/NetBeansProjects/Desktop/hibernate/build/classes, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre, sun.java.command=bancodados.TestaBuscas, hibernate.connection.url=jdbc:postgresql://localhost/banco_java_desktop, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, java.specification.vendor=Oracle Corporation, user.language=pt, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.8.0_131, java.ext.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes, java.vendor=Oracle Corporation, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=gnome, sun.cpu.isalist=}
+19:48:43,856 DEBUG DefaultIdentifierGeneratorFactory:89 - Setting dialect [org.hibernate.dialect.PostgreSQLDialect]
+19:48:43,929 DEBUG AbstractEntityPersister:2936 - Static SQL for entity: bancodados.Produto
+19:48:43,929 DEBUG AbstractEntityPersister:2941 -  Version select: select id from Produto where id =?
+19:48:43,930 DEBUG AbstractEntityPersister:2944 -  Snapshot select: select produto_.id, produto_.descricao as descricao0_, produto_.nome as nome0_, produto_.preco as preco0_ from Produto produto_ where produto_.id=?
+19:48:43,930 DEBUG AbstractEntityPersister:2947 -  Insert 0: insert into Produto (descricao, nome, preco, id) values (?, ?, ?, ?)
+19:48:43,930 DEBUG AbstractEntityPersister:2948 -  Update 0: update Produto set descricao=?, nome=?, preco=? where id=?
+19:48:43,930 DEBUG AbstractEntityPersister:2949 -  Delete 0: delete from Produto where id=?
+19:48:43,942 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [NONE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+19:48:43,942 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [READ]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+19:48:43,942 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [UPGRADE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+19:48:43,942 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [UPGRADE_NOWAIT]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+19:48:43,943 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [FORCE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+19:48:43,943 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [PESSIMISTIC_READ]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for share
+19:48:43,943 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [PESSIMISTIC_WRITE]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+19:48:43,943 DEBUG EntityLoader:124 - Static select for entity bancodados.Produto [PESSIMISTIC_FORCE_INCREMENT]: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=? for update
+19:48:43,947 DEBUG EntityLoader:56 - Static select for action ACTION_MERGE on entity bancodados.Produto: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+19:48:43,947 DEBUG EntityLoader:56 - Static select for action ACTION_REFRESH on entity bancodados.Produto: select produto0_.id as id0_0_, produto0_.descricao as descricao0_0_, produto0_.nome as nome0_0_, produto0_.preco as preco0_0_ from Produto produto0_ where produto0_.id=?
+19:48:43,949 DEBUG SessionFactoryObjectFactory:62 - initializing class SessionFactoryObjectFactory
+19:48:43,950 DEBUG SessionFactoryObjectFactory:99 - registered: ff8081815c5b8c0a015c5b8c0cac0000 (unnamed)
+19:48:43,950  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+19:48:43,950 DEBUG SessionFactoryImpl:378 - instantiated session factory
+19:48:43,951 DEBUG SessionFactoryImpl:547 - Checking 0 named HQL queries
+19:48:43,951 DEBUG SessionFactoryImpl:567 - Checking 0 named SQL queries
+19:48:43,972 DEBUG SessionImpl:257 - opened session at timestamp: 14961845239
+19:48:43,980 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+19:48:43,980 DEBUG ConnectionManager:444 - opening JDBC connection
+19:48:43,983 DEBUG SQL:111 - 
+    select
+        this_.id as id0_0_,
+        this_.descricao as descricao0_0_,
+        this_.nome as nome0_0_,
+        this_.preco as preco0_0_ 
+    from
+        Produto this_
+19:48:43,988 DEBUG AbstractBatcher:426 - about to open ResultSet (open ResultSets: 0, globally: 0)
+19:48:43,990 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#1]
+19:48:43,994 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#2]
+19:48:43,995 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#3]
+19:48:43,995 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#4]
+19:48:43,995 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#5]
+19:48:43,996 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#6]
+19:48:43,996 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#7]
+19:48:43,996 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#8]
+19:48:43,996 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#9]
+19:48:43,997 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#10]
+19:48:43,997 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#11]
+19:48:43,997 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#12]
+19:48:43,998 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#13]
+19:48:43,998 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#14]
+19:48:43,998 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#15]
+19:48:44,001 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#16]
+19:48:44,001 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#17]
+19:48:44,002 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#18]
+19:48:44,002 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#19]
+19:48:44,002 DEBUG AbstractBatcher:433 - about to close ResultSet (open ResultSets: 1, globally: 1)
+19:48:44,003 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+19:48:44,003 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#1]
+19:48:44,004 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#1]
+19:48:44,005 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#2]
+19:48:44,005 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#2]
+19:48:44,005 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#3]
+19:48:44,005 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#3]
+19:48:44,005 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#4]
+19:48:44,005 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#4]
+19:48:44,006 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#5]
+19:48:44,006 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#5]
+19:48:44,006 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#6]
+19:48:44,006 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#6]
+19:48:44,006 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#7]
+19:48:44,006 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#7]
+19:48:44,007 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#8]
+19:48:44,007 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#8]
+19:48:44,007 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#9]
+19:48:44,007 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#9]
+19:48:44,007 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#10]
+19:48:44,007 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#10]
+19:48:44,008 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#11]
+19:48:44,008 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#11]
+19:48:44,008 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#12]
+19:48:44,008 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#12]
+19:48:44,008 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#13]
+19:48:44,009 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#13]
+19:48:44,009 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#14]
+19:48:44,009 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#14]
+19:48:44,009 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#15]
+19:48:44,009 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#15]
+19:48:44,009 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#16]
+19:48:44,009 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#16]
+19:48:44,009 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#17]
+19:48:44,010 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#17]
+19:48:44,010 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#18]
+19:48:44,010 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#18]
+19:48:44,010 DEBUG TwoPhaseLoad:131 - resolving associations for [bancodados.Produto#19]
+19:48:44,010 DEBUG TwoPhaseLoad:239 - done materializing entity [bancodados.Produto#19]
+19:48:44,010 DEBUG StatefulPersistenceContext:892 - initializing non-lazy collections
+19:48:44,010 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+19:48:44,010 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+19:48:44,013 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+19:48:44,013 DEBUG ConnectionManager:444 - opening JDBC connection
+19:48:44,013 DEBUG SQL:111 - 
+    select
+        this_.id as id0_0_,
+        this_.descricao as descricao0_0_,
+        this_.nome as nome0_0_,
+        this_.preco as preco0_0_ 
+    from
+        Produto this_ limit ? offset ?
+19:48:44,015 DEBUG AbstractBatcher:426 - about to open ResultSet (open ResultSets: 0, globally: 0)
+19:48:44,015 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#4]
+19:48:44,016 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#5]
+19:48:44,016 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#6]
+19:48:44,017 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#7]
+19:48:44,017 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#8]
+19:48:44,017 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#9]
+19:48:44,017 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#10]
+19:48:44,018 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#11]
+19:48:44,018 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#12]
+19:48:44,018 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#13]
+19:48:44,018 DEBUG AbstractBatcher:433 - about to close ResultSet (open ResultSets: 1, globally: 1)
+19:48:44,018 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+19:48:44,019 DEBUG StatefulPersistenceContext:892 - initializing non-lazy collections
+19:48:44,019 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+19:48:44,019 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+19:48:44,056 DEBUG QueryTranslatorImpl:272 - parse() - HQL: from bancodados.Produto where id > 18
+19:48:44,063 DEBUG AST:291 - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'from'
+    |     \-[RANGE] Node: 'RANGE'
+    |        \-[DOT] Node: '.'
+    |           +-[IDENT] Node: 'bancodados'
+    |           \-[IDENT] Node: 'Produto'
+    \-[WHERE] Node: 'where'
+       \-[GT] Node: '>'
+          +-[IDENT] Node: 'id'
+          \-[NUM_INT] Node: '18'
+
+19:48:44,064 DEBUG ErrorCounter:91 - throwQueryException() : no errors
+19:48:44,084 DEBUG HqlSqlBaseWalker:111 - select << begin [level=1, statement=select]
+19:48:44,094 DEBUG FromElement:157 - FromClause{level=1} :  bancodados.Produto (no alias) -> produto0_
+19:48:44,096 DEBUG FromReferenceNode:74 - Resolved :  {synthetic-alias} -> {synthetic-alias}
+19:48:44,097 DEBUG DotNode:613 - getDataType() : id -> org.hibernate.type.LongType@57af006c
+19:48:44,097 DEBUG FromReferenceNode:74 - Resolved :  {synthetic-alias}.id -> produto0_.id
+19:48:44,098 DEBUG HqlSqlBaseWalker:117 - select : finishing up [level=1, statement=select]
+19:48:44,098 DEBUG HqlSqlWalker:611 - processQuery() :  ( SELECT ( FromClause{level=1} Produto produto0_ ) ( where ( > ( produto0_.id {synthetic-alias} id ) 18 ) ) )
+19:48:44,101 DEBUG HqlSqlWalker:854 - Derived SELECT clause created.
+19:48:44,104 DEBUG JoinProcessor:179 - Using FROM fragment [Produto produto0_]
+19:48:44,105 DEBUG HqlSqlBaseWalker:123 - select >> end [level=1, statement=select]
+19:48:44,106 DEBUG AST:258 - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Produto)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'produto0_.id as id0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=Produto,tableAlias=produto0_,origin=null,columns={,className=bancodados.Produto}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'produto0_.descricao as descricao0_, produto0_.nome as nome0_, produto0_.preco as preco0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[produto0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'Produto produto0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=Produto,tableAlias=produto0_,origin=null,columns={,className=bancodados.Produto}}
+    \-[WHERE] SqlNode: 'where'
+       \-[GT] BinaryLogicOperatorNode: '>'
+          +-[DOT] DotNode: 'produto0_.id' {propertyName=id,dereferenceType=ALL,propertyPath=id,path={synthetic-alias}.id,tableAlias=produto0_,className=bancodados.Produto,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'id' {originalText=id}
+          \-[NUM_INT] LiteralNode: '18'
+
+19:48:44,106 DEBUG ErrorCounter:91 - throwQueryException() : no errors
+19:48:44,116 DEBUG QueryTranslatorImpl:241 - HQL: from bancodados.Produto where id > 18
+19:48:44,116 DEBUG QueryTranslatorImpl:242 - SQL: select produto0_.id as id0_, produto0_.descricao as descricao0_, produto0_.nome as nome0_, produto0_.preco as preco0_ from Produto produto0_ where produto0_.id>18
+19:48:44,116 DEBUG ErrorCounter:91 - throwQueryException() : no errors
+19:48:44,122 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+19:48:44,122 DEBUG ConnectionManager:444 - opening JDBC connection
+19:48:44,122 DEBUG SQL:111 - 
+    select
+        produto0_.id as id0_,
+        produto0_.descricao as descricao0_,
+        produto0_.nome as nome0_,
+        produto0_.preco as preco0_ 
+    from
+        Produto produto0_ 
+    where
+        produto0_.id>18
+19:48:44,125 DEBUG AbstractBatcher:426 - about to open ResultSet (open ResultSets: 0, globally: 0)
+19:48:44,126 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#19]
+19:48:44,126 DEBUG AbstractBatcher:433 - about to close ResultSet (open ResultSets: 1, globally: 1)
+19:48:44,126 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+19:48:44,126 DEBUG StatefulPersistenceContext:892 - initializing non-lazy collections
+19:48:44,127 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+19:48:44,127 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+19:48:44,142 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+19:48:44,143 DEBUG ConnectionManager:444 - opening JDBC connection
+19:48:44,143 DEBUG SQL:111 - 
+    select
+        * 
+    from
+        Produto 
+    order by
+        preco
+19:48:44,145 DEBUG AbstractBatcher:426 - about to open ResultSet (open ResultSets: 0, globally: 0)
+19:48:44,146 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#1]
+19:48:44,146 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#2]
+19:48:44,146 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#3]
+19:48:44,146 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#4]
+19:48:44,146 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#5]
+19:48:44,147 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#6]
+19:48:44,147 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#7]
+19:48:44,147 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#8]
+19:48:44,147 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#9]
+19:48:44,147 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#10]
+19:48:44,147 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#11]
+19:48:44,148 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#12]
+19:48:44,150 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#13]
+19:48:44,150 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#14]
+19:48:44,150 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#15]
+19:48:44,151 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#16]
+19:48:44,151 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#17]
+19:48:44,151 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#18]
+19:48:44,151 DEBUG Loader:1218 - result row: EntityKey[bancodados.Produto#19]
+19:48:44,151 DEBUG AbstractBatcher:433 - about to close ResultSet (open ResultSets: 1, globally: 1)
+19:48:44,151 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+19:48:44,152 DEBUG StatefulPersistenceContext:892 - initializing non-lazy collections
+19:48:44,152 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+19:48:44,152 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
